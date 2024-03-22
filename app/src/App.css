@@ -1,11 +1,17 @@
-:root{
-  --hight:1080px;
+:root {
+  --hight: 1080px;
 }
 
-.App{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
   width: 100%;
   height: var(--hight);
-  background-image: url("./assets/images/MainBackroung.png");
+  background-image: url('./assets/images/MainBackroung.png');
   background-size: 115% 125%;
   background-position: center;
   display: flex;

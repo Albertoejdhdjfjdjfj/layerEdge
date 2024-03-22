@@ -1,0 +1,125 @@
+.access_input {
+  width: 576px;
+  padding: 8px 8px 8px 16px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(197, 167, 212, 0.15);
+}
+
+.access_input:hover {
+  background-color: rgba(133, 117, 142, 0.1);
+}
+
+.access_input:hover > div > a > span {
+  background-color: rgba(241, 235, 244, 1);
+  color: rgba(18, 15, 20, 1);
+}
+
+div.access_input_active {
+  background-color: rgba(133, 117, 142, 0.1);
+}
+
+div.access_input_active > div > a > span {
+  background-color: rgba(241, 235, 244, 1);
+  color: rgba(18, 15, 20, 1);
+}
+
+#access_input_entered {
+     padding: 16px 16px 16px 16px;
+}
+
+#access_input_entered > div > a > span {
+  background-color: rgba(133, 117, 142, 0.6);
+  color: rgba(18, 15, 20, 1);
+}
+
+.access_input > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.access_input > div > p {
+  background-color: rgba(133, 117, 142, 0.6);
+  padding: 12px 24px 12px 24px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(18, 15, 20, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.access_input > div > a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}
+
+.access_input > div > a > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid rgba(197, 167, 212, 0.15);
+  width: 31px;
+  height: 32px;
+  border-radius: 99px;
+  color: rgba(241, 235, 244, 1);
+  margin-right: 16px;
+}
+
+.access_input > span {
+  margin-top: 32px;
+  width: 544px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.access_input > span > div {
+  width: 449px;
+  height: 46px;
+  padding: 12px 24px 12px 24px;
+  border: 1px solid rgba(197, 167, 212, 0.15);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.access_input > span > div > input {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  opacity: 1;
+  color: rgba(241, 235, 244, 1);
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.access_input > span > div > input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(133, 117, 142, 0.6);
+}
+
+.access_input > span > p {
+  padding: 12px 24px 12px 24px;
+  background-color: rgba(241, 235, 244, 1);
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
