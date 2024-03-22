@@ -10,7 +10,7 @@
 
 .App {
   width: 100%;
-  height: var(--hight);
+  min-height: var(--hight);
   background-image: url('./assets/images/MainBackroung.png');
   background-size: 115% 125%;
   background-position: center;

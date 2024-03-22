@@ -1,6 +1,6 @@
 import React from 'react';
-import { useBool } from '../../../../../../assets/functions/hooks/customHooks';
-import CheckMark from '../../../../../../assets/images/CheckMark.svg';
+import { useBool } from '../../../../assets/functions/hooks/customHooks';
+import CheckMark from '../../../../assets/images/CheckMark.svg';
 import './Input.css';
 
 const Input = ({ order, title, buttonTitle, placeholder }) => {

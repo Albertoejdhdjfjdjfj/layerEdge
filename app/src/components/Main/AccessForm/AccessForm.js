@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from './componets/CodeInput/Input';
+import Input from './Input/Input';
 import './AccessForm.css';
 
 const AccessForm = () => {

@@ -1,0 +1,47 @@
+.paginator {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  width: 580px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paginator p {
+  width: 46px;
+  height: 46px;
+  border-radius: 100px;
+  border: 1px solid rgba(197, 167, 212, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}
+
+.paginator > p > img {
+  width: 20px;
+  height: 20px;
+}
+
+.paginator > div {
+  width: 424px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paginator > div > a {
+  font-size: 16px;
+  color: rgba(133, 117, 142, 0.6);
+}
+
+.paginator > div > p:first-child{
+     background-color: rgba(133, 117, 142, 0.1);
+}
+
+.arrow_left>img{
+     transform: rotate(180deg);
+   }

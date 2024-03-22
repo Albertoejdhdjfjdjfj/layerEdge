@@ -1,0 +1,89 @@
+.user {
+  height: 78px;
+  border-bottom: 1px solid rgba(197, 167, 212, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user > div {
+  display: flex;
+  align-items: center;
+}
+
+.user > div > span {
+  width: 32px;
+  height: 32px;
+  border-radius: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  background-color: rgba(133, 117, 142, 0.1);
+  color: rgba(241, 235, 244, 1);
+}
+
+#first > div > span {
+  background-color: rgba(255, 233, 40, 1);
+  color: rgba(18, 15, 20, 1);
+}
+
+#second > div > span {
+  background-color: rgba(224, 224, 222, 1);
+  color: rgba(18, 15, 20, 1);
+}
+
+#third > div > span {
+  background-color: rgba(229, 153, 40, 1);
+  color: rgba(18, 15, 20, 1);
+}
+
+.user > div > div {
+  margin-left: 126px;
+  display: flex;
+  align-items: center;
+}
+
+.user > div > div > img {
+  width: 32px;
+  height: 32px;
+}
+
+.user > div > div > a {
+  margin-left: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}
+
+.user > p {
+  width: 499px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user > p > a {
+  margin-left: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}
+
+.user > p > div {
+  width: 161px;
+  height: 46px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 100px;
+  background-color: rgba(133, 117, 142, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}

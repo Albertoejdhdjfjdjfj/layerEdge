@@ -1,0 +1,42 @@
+:root {
+  --width: 1920;
+}
+
+.access_form {
+  position: relative; /* Добавляем позиционирование, чтобы псевдоэлемент был видимым */
+  width: 640px;
+  height: 535px;
+  margin-top: 215px;
+  border-radius: 32px;
+  border: 1px solid rgba(241, 235, 244, 0.05);
+  background-color: rgba(241, 235, 244, 0.05);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.access_form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 12px;
+  right: 12;
+  height: 1px;
+  width: 610px;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 215, 74, 1),
+    rgba(240, 123, 168, 1),
+    rgba(137, 20, 229, 1),
+    rgba(137, 20, 229, 0)
+  );
+}
+.access_form > h2 {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}

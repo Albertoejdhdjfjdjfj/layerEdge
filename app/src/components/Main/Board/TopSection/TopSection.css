@@ -1,0 +1,98 @@
+.top_section {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.top_section > span {
+  height: 100px;
+  width: 100px;
+  border-radius: 99px;
+  background-image: url(../../../../assets//images/Avatar.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.top_section > span > p {
+  width: 62px;
+  height: 32px;
+  padding: 4px 8px 4px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99px;
+  position: absolute;
+  background-color: rgba(133, 117, 142, 1);
+  box-shadow: 0px 10px 20px 0px rgba(18, 15, 20, 0.25);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}
+
+.top_section > div {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.user_name {
+  margin-left: 48px;
+}
+
+.invited_by {
+  margin-left: 131px;
+}
+
+.top_section > div > a {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}
+
+.top_section > div > p {
+  width: 104px;
+  height: 46px;
+  color: rgba(241, 235, 244, 1);
+  padding: 12px 24px 12px 24px;
+  border-radius: 100px;
+  border: 1px solid rgba(197, 167, 212, 0.15);
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_section > div > span {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(133, 117, 142, 1);
+}
+
+.top_section > p {
+  height: 100px;
+  margin-left: 263px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.top_section > p > a {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}
+
+.top_section > p > span {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(133, 117, 142, 1);
+}

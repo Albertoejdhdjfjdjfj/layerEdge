@@ -1,0 +1,33 @@
+.users_list {
+  margin-top: 73px;
+  display: flex;
+  flex-direction: column;
+}
+
+.users_list > p {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.users_list > p > a {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(133, 117, 142, 1);
+}
+
+.users_list > p :nth-child(2) {
+  margin-left: 121px;
+}
+
+.users_list > p :nth-child(3) {
+  margin-left: 260px;
+}
+
+.users_list > p :nth-child(4) {
+  margin-left: 383px;
+}
+
+.users_list > span {
+  margin-top: 25px;
+}
