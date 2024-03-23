@@ -10,7 +10,8 @@ const User = ({ order, name, invitedBy, points, linkTo = '/user' }) => {
     <div
       onClick={() => navigate(linkTo)}
       className="user"
-      id={order < 4 ? ['first', 'second', 'third'][order - 1] : ''}>
+      id={order < 4 ? ['first', 'second', 'third'][order - 1] : ''}
+    >
       <div>
         <span>{order}</span>
         <div>
