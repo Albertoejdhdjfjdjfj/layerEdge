@@ -1,0 +1,113 @@
+.refs_list {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.refs_list > p {
+  display: flex;
+}
+
+.refs_list > p :nth-child(2) {
+  margin-left: 359px;
+}
+
+.refs_list > p :last-child {
+  margin-left: 440px;
+}
+
+.refs_list > p > a {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(133, 117, 142, 1);
+}
+
+.refs_list > span {
+  display: flex;
+  flex-direction: column;
+}
+
+.refs_list > span > div {
+  width: 960px;
+  height: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(197, 167, 212, 0.15);
+}
+
+.refs_list > span > div:first-child {
+  justify-content: space-between;
+}
+
+/*style for inviting friend*/
+.refs_list > span > div:first-child > span {
+  width: 107px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}
+
+.refs_list > span > div:first-child > span > img {
+  width: 32px;
+  height: 32px;
+}
+
+.refs_list > span > div:first-child > a {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(133, 117, 142, 1);
+}
+
+.refs_list > span > div:first-child > div {
+  width: 161px;
+  height: 46px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 100px;
+  background-color: rgba(133, 117, 142, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}
+/* style for ref and button  */
+.refs_list > span > div > span {
+  width: 412px;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.refs_list > span > div > span > a {
+  width: 317px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(133, 117, 142, 0.1);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(133, 117, 142, 1);
+}
+
+.refs_list > span > div > span > p {
+  width: 87px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(241, 235, 244, 1);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(18, 15, 20, 1);
+}

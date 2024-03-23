@@ -1,11 +1,13 @@
 import React from 'react';
+import {useNavigate} from'react-router-dom'
 import Avatar from '../../../../../assets/images/Avatar.svg';
 import LetterE from '../../../../../assets/images/LetterE.svg';
 import './User.css';
 
-const User = ({ order, name, invitedBy, points }) => {
+const User = ({ order, name, invitedBy, points, linkTo='/user' }) => {
+  const navigate=useNavigate();
   return (
-    <div className="user" id={order < 4 ? ['first', 'second', 'third'][order - 1] : ''}>
+    <div onClick={()=>navigate(linkTo)} className="user" id={order < 4 ? ['first', 'second', 'third'][order - 1] : ''}>
       <div>
         <span>{order}</span>
         <div>

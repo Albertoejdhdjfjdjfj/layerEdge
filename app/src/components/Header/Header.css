@@ -53,3 +53,38 @@ header > div > img {
   width: 24px;
   height: 24px;
 }
+
+header>span{
+ width: 322px;
+display: flex;
+justify-content: space-between;
+}
+
+header>span>div{
+  width: 144px;
+  height: 56px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 100px;
+  background-color: rgba(133, 117, 142, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}
+
+header>span>p{
+  width: 162px;
+  height: 56px;
+  border-radius: 100px;
+  border: 1px solid rgba(197, 167, 212, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}

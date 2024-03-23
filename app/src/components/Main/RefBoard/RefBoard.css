@@ -1,0 +1,5 @@
+.ref_board {
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+}

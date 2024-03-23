@@ -38,10 +38,10 @@
   color: rgba(133, 117, 142, 0.6);
 }
 
-.paginator > div > p:first-child{
-     background-color: rgba(133, 117, 142, 0.1);
+.paginator > div > p:first-child {
+  background-color: rgba(133, 117, 142, 0.1);
 }
 
-.arrow_left>img{
-     transform: rotate(180deg);
-   }
+.arrow_left > img {
+  transform: rotate(180deg);
+}

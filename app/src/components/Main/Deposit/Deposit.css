@@ -1,11 +1,7 @@
-:root {
-  --width: 1920;
-}
-
-.access_form {
+.deposit {
   position: relative;
   width: 640px;
-  min-height: 457px;
+  height: 535px;
   margin-top: 215px;
   border-radius: 32px;
   border: 1px solid rgba(241, 235, 244, 0.05);
@@ -16,7 +12,7 @@
   align-items: center;
 }
 
-.access_form::before {
+.deposit::before {
   content: '';
   position: absolute;
   top: 0;
@@ -33,10 +29,35 @@
     rgba(137, 20, 229, 0)
   );
 }
-.access_form > h2 {
-  margin-bottom: 12px;
+
+.deposit > h2 {
+  width: 274px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deposit > h2 > a {
   font-size: 32px;
   font-weight: 400;
   font-family: 'Satoshi';
   color: rgba(241, 235, 244, 1);
+}
+
+.deposit > h2 > a:last-child {
+  color: rgba(133, 117, 142, 1);
+}
+
+.deposit > p {
+  margin-top: 32px;
+  width: 112px;
+  height: 56px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(241, 235, 244, 1);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(18, 15, 20, 1);
 }

@@ -1,0 +1,80 @@
+.pop_up_wrapper {
+  width: 100vw;
+  height: 1080px;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(18, 15, 20, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop_up {
+  position: relative;
+  width: 540px;
+  height: 227px;
+  border-radius: 32px;
+  border: 1px solid rgba(241, 235, 244, 0.05);
+  background-color: rgba(241, 235, 244, 0.05);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pop_up::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 12px;
+  right: 12;
+  height: 1px;
+  width: 510px;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 215, 74, 1),
+    rgba(240, 123, 168, 1),
+    rgba(137, 20, 229, 1),
+    rgba(137, 20, 229, 0)
+  );
+}
+.pop_up > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pop_up > div > h2 {
+  display: inline;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}
+
+.pop_up > div > a {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(241, 235, 244, 1);
+}
+
+.pop_up > p {
+  width: 126px;
+  height: 56px;
+  margin-top: 32px;
+  border-radius: 100px;
+  background-color: rgba(241, 235, 244, 1);
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Satoshi';
+  color: rgba(18, 15, 20, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

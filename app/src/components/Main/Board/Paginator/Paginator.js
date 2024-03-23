@@ -5,7 +5,7 @@ import './Paginator.css';
 const Paginator = () => {
   return (
     <div className="paginator">
-      <p className='arrow_left'>
+      <p className="arrow_left">
         <img src={Arrow} />
       </p>
       <div>
@@ -17,7 +17,7 @@ const Paginator = () => {
         <a>...</a>
         <p>10</p>
       </div>
-      <p className='arrow_right'>
+      <p className="arrow_right">
         <img src={Arrow} />
       </p>
     </div>
