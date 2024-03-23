@@ -11,14 +11,14 @@
   width: 46px;
   height: 46px;
   border-radius: 100px;
-  border: 1px solid rgba(197, 167, 212, 0.15);
+  border: 1px solid var(--gray-15);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 16px;
   font-weight: 500;
   font-family: 'Satoshi';
-  color: rgba(241, 235, 244, 1);
+  color: var(--white-100);
 }
 
 .paginator > p > img {
@@ -35,11 +35,11 @@
 
 .paginator > div > a {
   font-size: 16px;
-  color: rgba(133, 117, 142, 0.6);
+  color: var(--gray-60);
 }
 
 .paginator > div > p:first-child {
-  background-color: rgba(133, 117, 142, 0.1);
+  background-color: var(--gray-10);
 }
 
 .arrow_left > img {

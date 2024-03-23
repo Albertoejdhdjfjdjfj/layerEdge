@@ -25,12 +25,9 @@
   align-items: center;
   border-radius: 99px;
   position: absolute;
-  background-color: rgba(133, 117, 142, 1);
+  background-color: var(--gray-100);
   box-shadow: 0px 10px 20px 0px rgba(18, 15, 20, 0.25);
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(241, 235, 244, 1);
 }
 
 .top_section > div {
@@ -51,27 +48,21 @@
 
 .top_section > div > a {
   font-size: 32px;
-  font-weight: 400;
-  font-family: 'Satoshi';
-  color: rgba(241, 235, 244, 1);
 }
 
 .top_section > div > p {
   width: 104px;
   height: 46px;
-  color: rgba(241, 235, 244, 1);
   padding: 12px 24px 12px 24px;
   border-radius: 100px;
-  border: 1px solid rgba(197, 167, 212, 0.15);
+  border: 1px solid var(--gray-15);
   display: flex;
   justify-content: space-between;
 }
 
 .top_section > div > span {
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(133, 117, 142, 1);
+  color: var(--gray-100);
 }
 
 .top_section > p {
@@ -85,14 +76,9 @@
 
 .top_section > p > a {
   font-size: 32px;
-  font-weight: 400;
-  font-family: 'Satoshi';
-  color: rgba(241, 235, 244, 1);
 }
 
 .top_section > p > span {
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(133, 117, 142, 1);
+  color: var(--gray-100);
 }

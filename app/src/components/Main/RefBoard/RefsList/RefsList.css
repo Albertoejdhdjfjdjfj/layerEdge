@@ -6,21 +6,12 @@
 
 .refs_list > p {
   display: flex;
-}
-
-.refs_list > p :nth-child(2) {
-  margin-left: 359px;
-}
-
-.refs_list > p :last-child {
-  margin-left: 440px;
+  justify-content: space-between;
 }
 
 .refs_list > p > a {
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(133, 117, 142, 1);
+  color: var(--gray-100);
 }
 
 .refs_list > span {
@@ -34,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid rgba(197, 167, 212, 0.15);
+  border-bottom: 1px solid var(--gray-15);
 }
 
 .refs_list > span > div:first-child {
@@ -46,10 +37,8 @@
   width: 107px;
   display: flex;
   align-items: center;
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(241, 235, 244, 1);
+  color: var(--white-100);
 }
 
 .refs_list > span > div:first-child > span > img {
@@ -58,10 +47,8 @@
 }
 
 .refs_list > span > div:first-child > a {
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(133, 117, 142, 1);
+  color: var(--gray-100);
 }
 
 .refs_list > span > div:first-child > div {
@@ -69,14 +56,11 @@
   height: 46px;
   padding: 12px 24px 12px 24px;
   border-radius: 100px;
-  background-color: rgba(133, 117, 142, 0.1);
+  background-color: var(--gray-10);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(241, 235, 244, 1);
 }
 /* style for ref and button  */
 .refs_list > span > div > span {
@@ -92,11 +76,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(133, 117, 142, 0.1);
-  font-size: 16px;
+  background-color: var(--gray-10);
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(133, 117, 142, 1);
+  color: var(--gray-100);
 }
 
 .refs_list > span > div > span > p {
@@ -105,9 +87,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(241, 235, 244, 1);
-  font-size: 16px;
+  background-color: var(--white-100);
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(18, 15, 20, 1);
+  color: var(--black-100);
 }

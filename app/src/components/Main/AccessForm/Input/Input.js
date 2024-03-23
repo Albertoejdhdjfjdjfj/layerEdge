@@ -10,8 +10,7 @@ const Input = ({ order, title, buttonTitle, placeholder }) => {
   return (
     <div
       className={'access_input' + (buttonIsClicked && !formIsEntered ? ' access_input_active' : '')}
-      id={formIsEntered ? 'access_input_entered' : ''}
-    >
+      id={formIsEntered ? 'access_input_entered' : ''}>
       <div>
         <a>
           <span>{order}</span> {title}

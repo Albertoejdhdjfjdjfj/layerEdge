@@ -1,15 +1,11 @@
-:root {
-  --width: 1920;
-}
-
 .access_form {
   position: relative;
   width: 640px;
   min-height: 457px;
   margin-top: 215px;
   border-radius: 32px;
-  border: 1px solid rgba(241, 235, 244, 0.05);
-  background-color: rgba(241, 235, 244, 0.05);
+  border: 1px solid var(--white-5);
+  background-color: var(--white-5);
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -36,7 +32,4 @@
 .access_form > h2 {
   margin-bottom: 12px;
   font-size: 32px;
-  font-weight: 400;
-  font-family: 'Satoshi';
-  color: rgba(241, 235, 244, 1);
 }

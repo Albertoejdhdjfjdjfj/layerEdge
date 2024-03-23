@@ -1,21 +1,21 @@
 import React from 'react';
-import { useLocation,useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Logo from '../../assets/images/Logo.svg';
 import LetterE from '../../assets/images/LetterE.svg';
 import Wallet from '../../assets/images/Wallet.svg';
 import './Header.css';
 
 const Header = () => {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   const location = useLocation();
   const currentPath = location.pathname;
- 
+
   return (
     <header>
       <img src={Logo} />
       <nav>
-        <p onClick={()=>navigate('/deposit')}>Points</p>
-        <p onClick={()=>navigate('/leaderboard')}>Leaderboard</p>
+        <p onClick={() => navigate('/deposit')}>Points</p>
+        <p onClick={() => navigate('/leaderboard')}>Leaderboard</p>
       </nav>
       {currentPath == '/' ? (
         <div>

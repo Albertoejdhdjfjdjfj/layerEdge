@@ -1,16 +1,30 @@
+@import url('./assets/fonts/fonts.css');
+
 :root {
-  --hight: 1080px;
+  --screen-width: 1920;
+  --gray-100: rgba(133, 117, 142, 1);
+  --gray-10: rgba(133, 117, 142, 0.1);
+  --gray-15: rgba(197, 167, 212, 0.15);
+  --gray-60: rgba(133, 117, 142, 0.6);
+  --gray-100: rgba(133, 117, 142, 1);
+  --white-5: rgba(241, 235, 244, 0.05);
+  --white-100: rgba(241, 235, 244, 1);
+  --black-100: rgba(18, 15, 20, 1);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Satoshi';
+  color: var(--white-100);
 }
 
 .App {
   width: 100%;
-  min-height: var(--hight);
+  min-height: 1080px;
   background-image: url('./assets/images/MainBackroung.png');
   background-size: 115% 125%;
   background-position: center;

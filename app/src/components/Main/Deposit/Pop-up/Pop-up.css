@@ -16,8 +16,8 @@
   width: 540px;
   height: 227px;
   border-radius: 32px;
-  border: 1px solid rgba(241, 235, 244, 0.05);
-  background-color: rgba(241, 235, 244, 0.05);
+  border: 1px solid var(--white-5);
+  background-color: var(--white-5);
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -50,17 +50,11 @@
 .pop_up > div > h2 {
   display: inline;
   font-size: 32px;
-  font-weight: 400;
-  font-family: 'Satoshi';
-  color: rgba(241, 235, 244, 1);
 }
 
 .pop_up > div > a {
   margin-top: 8px;
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(241, 235, 244, 1);
 }
 
 .pop_up > p {
@@ -68,12 +62,10 @@
   height: 56px;
   margin-top: 32px;
   border-radius: 100px;
-  background-color: rgba(241, 235, 244, 1);
+  background-color: var(--white-100);
   margin-top: 8px;
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(18, 15, 20, 1);
+  color: var(--black-100);
   display: flex;
   justify-content: center;
   align-items: center;

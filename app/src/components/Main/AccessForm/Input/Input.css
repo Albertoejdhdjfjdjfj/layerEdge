@@ -5,25 +5,25 @@
   border-radius: 32px;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(197, 167, 212, 0.15);
+  border: 1px solid var(--gray-15);
 }
 
 .access_input:hover {
-  background-color: rgba(133, 117, 142, 0.1);
+  background-color: var(--gray-10);
 }
 
 .access_input:hover > div > a > span {
-  background-color: rgba(241, 235, 244, 1);
-  color: rgba(18, 15, 20, 1);
+  background-color: var(--white-100);
+  color: var(--black-100);
 }
 
 div.access_input_active {
-  background-color: rgba(133, 117, 142, 0.1);
+  background-color: var(--gray-10);
 }
 
 div.access_input_active > div > a > span {
-  background-color: rgba(241, 235, 244, 1);
-  color: rgba(18, 15, 20, 1);
+  background-color: var(--white-100);
+  color: var(--black-100);
 }
 
 #access_input_entered {
@@ -31,25 +31,22 @@ div.access_input_active > div > a > span {
 }
 
 #access_input_entered > div > a > span {
-  background-color: rgba(133, 117, 142, 0.6);
-  color: rgba(18, 15, 20, 1);
+  background-color: var(--gray-60);
+  color: var(--black-100);
 }
 
 .access_input > div {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .access_input > div > p {
-  background-color: rgba(133, 117, 142, 0.6);
+  background-color: var(--gray-60);
   padding: 12px 24px 12px 24px;
   border-radius: 100px;
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(18, 15, 20, 1);
+  color: var(--black-100);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,10 +55,7 @@ div.access_input_active > div > a > span {
 .access_input > div > a {
   display: flex;
   align-items: center;
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(241, 235, 244, 1);
 }
 
 .access_input > div > a > span {
@@ -69,11 +63,10 @@ div.access_input_active > div > a > span {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  border: 1px solid rgba(197, 167, 212, 0.15);
+  border: 1px solid var(--gray-15);
   width: 31px;
   height: 32px;
   border-radius: 99px;
-  color: rgba(241, 235, 244, 1);
   margin-right: 16px;
 }
 
@@ -88,39 +81,31 @@ div.access_input_active > div > a > span {
   width: 449px;
   height: 46px;
   padding: 12px 24px 12px 24px;
-  border: 1px solid rgba(197, 167, 212, 0.15);
+  border: 1px solid var(--gray-15);
   border-radius: 24px;
   display: flex;
   align-items: center;
 }
 
 .access_input > span > div > input {
-  width: 100%;
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
-  opacity: 1;
-  color: rgba(241, 235, 244, 1);
   background: transparent;
   border: none;
   outline: none;
 }
 
 .access_input > span > div > input::placeholder {
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(133, 117, 142, 0.6);
+  color: var(--gray-60);
 }
 
 .access_input > span > p {
   padding: 12px 24px 12px 24px;
-  background-color: rgba(241, 235, 244, 1);
+  background-color: var(--white-100);
   border-radius: 100px;
-  font-size: 16px;
   font-weight: 500;
-  font-family: 'Satoshi';
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--black-100);
 }

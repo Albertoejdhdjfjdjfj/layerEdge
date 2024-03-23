@@ -1,14 +1,15 @@
 .deposit {
   position: relative;
   width: 640px;
-  height: 535px;
+  height: 564px;
   margin-top: 215px;
   border-radius: 32px;
-  border: 1px solid rgba(241, 235, 244, 0.05);
-  background-color: rgba(241, 235, 244, 0.05);
+  border: 1px solid var(--white-5);
+  background-color: var(--white-5);
   padding: 32px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -38,26 +39,21 @@
 
 .deposit > h2 > a {
   font-size: 32px;
-  font-weight: 400;
-  font-family: 'Satoshi';
-  color: rgba(241, 235, 244, 1);
 }
 
 .deposit > h2 > a:last-child {
-  color: rgba(133, 117, 142, 1);
+  color: var(--gray-100);
 }
 
 .deposit > p {
-  margin-top: 32px;
   width: 112px;
   height: 56px;
+  padding: 17px 32px;
   border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(241, 235, 244, 1);
-  font-size: 16px;
+  background-color: var(--white-100);
   font-weight: 500;
-  font-family: 'Satoshi';
-  color: rgba(18, 15, 20, 1);
+  color: var(--black-100);
 }
