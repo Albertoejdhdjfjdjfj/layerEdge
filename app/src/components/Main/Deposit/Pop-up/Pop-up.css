@@ -1,11 +1,12 @@
 .pop_up_wrapper {
   width: 100vw;
   height: 1080px;
-  position: absolute;
-  top: 43%;
+  position: fixed;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(18, 15, 20, 0.8);
+  backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +18,7 @@
   height: 227px;
   border-radius: 32px;
   border: 1px solid var(--white-5);
-  background-color: var(--white-5);
+  background-color: #1c1a20;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -69,4 +70,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pop_up > p:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  .pop_up_wrapper {
+    width: 100vw;
+    height: 667px;
+  }
+
+  .pop_up {
+    position: relative;
+    width: 343px;
+    height: 166px;
+    border-radius: 32px;
+    padding: 20px;
+  }
+
+  .pop_up::before {
+    content: '';
+    position: absolute;
+    width: 310px;
+  }
+
+  .pop_up > div > h2 {
+    font-size: 24px;
+  }
+
+  .pop_up > div > a {
+    font-size: 13px;
+  }
+
+  .pop_up > p {
+    width: 82px;
+    height: 34px;
+    margin-top: 32px;
+    font-size: 13px;
+  }
 }

@@ -33,9 +33,11 @@
   justify-content: space-between;
 }
 
-.paginator > div > a {
-  font-size: 16px;
-  color: var(--gray-60);
+.paginator > div > img {
+  width: 52px;
+  height: 28px;
+  display: flex;
+  align-items: center;
 }
 
 .paginator > div > p:first-child {
@@ -44,4 +46,41 @@
 
 .arrow_left > img {
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 375px) {
+  .paginator {
+    margin-top: 24px;
+    margin-bottom: 64px;
+    width: 359px;
+    display: flex;
+  }
+
+  .paginator p {
+    width: 42px;
+    height: 42px;
+    border-radius: 100px;
+    border: 1px solid var(--gray-15);
+    display: flex;
+    
+    font-weight: 500;
+  }
+
+  .paginator > div > p:nth-child(4),
+  .paginator > div > p:nth-child(5) {
+    display: none;
+  }
+
+  .paginator > div {
+    width: 246px;
+  }
+
+  .paginator > div > a {
+    font-size: 16px;
+    color: var(--gray-60);
+  }
+
+  .arrow_left > img {
+    transform: rotate(180deg);
+  }
 }

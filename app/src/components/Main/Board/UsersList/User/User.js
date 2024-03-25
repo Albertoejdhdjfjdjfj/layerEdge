@@ -12,20 +12,19 @@ const User = ({ order, name, invitedBy, points, linkTo = '/user' }) => {
       className="user"
       id={order < 4 ? ['first', 'second', 'third'][order - 1] : ''}
     >
+      <span>{order}</span>
       <div>
-        <span>{order}</span>
-        <div>
-          <img src={Avatar} />
-          <a>{name}</a>
-        </div>
+        <img src={Avatar} />
+        <a>{name}</a>
       </div>
 
+      <a>
+        {invitedBy}
+        <p>Invited by</p>
+      </a>
       <p>
-        <a>{invitedBy}</a>
-        <div>
-          <img src={LetterE} />
-          <a>{points}</a>
-        </div>
+        <img src={LetterE} />
+        <a>{points}</a>
       </p>
     </div>
   );

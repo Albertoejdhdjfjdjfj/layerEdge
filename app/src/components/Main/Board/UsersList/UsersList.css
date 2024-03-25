@@ -29,3 +29,14 @@
 .users_list > span {
   margin-top: 25px;
 }
+
+@media screen and (max-width: 375px) {
+  .users_list {
+    width: 343px;
+    margin-top: 64px;
+  }
+
+  .users_list > p {
+    display: none;
+  }
+}

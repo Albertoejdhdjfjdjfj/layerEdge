@@ -1,4 +1,5 @@
 import React from 'react';
+import Ref from './Ref/Ref';
 import LetterE from '../../../../assets/images/LetterE.svg';
 import Avatar from '../../../../assets/images/Avatar.svg';
 import './RefsList.css';
@@ -23,31 +24,11 @@ const RefsList = () => {
             <a>210 165 961</a>
           </div>
         </div>
-        <div>
-          <span>
-            <a>layeredge.io/invite/ID705</a> <p>Copy</p>
-          </span>
-        </div>
-        <div>
-          <span>
-            <a>layeredge.io/invite/ID705</a> <p>Copy</p>
-          </span>
-        </div>
-        <div>
-          <span>
-            <a>layeredge.io/invite/ID705</a> <p>Copy</p>
-          </span>
-        </div>
-        <div>
-          <span>
-            <a>layeredge.io/invite/ID705</a> <p>Copy</p>
-          </span>
-        </div>
-        <div>
-          <span>
-            <a>layeredge.io/invite/ID705</a> <p>Copy</p>
-          </span>
-        </div>
+        <Ref link="layeredge.io/invite/ID705" />
+        <Ref link="layeredge.io/invite/ID705" />
+        <Ref link="layeredge.io/invite/ID705" />
+        <Ref link="layeredge.io/invite/ID705" />
+        <Ref link="layeredge.io/invite/ID705" />
       </span>
     </div>
   );

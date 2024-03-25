@@ -1,11 +1,13 @@
 .access_input {
-  margin-top: 20px;
-  width: 576px;
-  padding: 8px 8px 8px 16px;
+  width: 100%;
+  height: 64px;
+  padding: 16px;
   border-radius: 32px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border: 1px solid var(--gray-15);
+  margin-top: 20px;
 }
 
 .access_input:hover {
@@ -18,7 +20,9 @@
 }
 
 div.access_input_active {
+  height: 142px;
   background-color: var(--gray-10);
+  justify-content: space-between;
 }
 
 div.access_input_active > div > a > span {
@@ -27,7 +31,7 @@ div.access_input_active > div > a > span {
 }
 
 #access_input_entered {
-  padding: 16px 16px 16px 16px;
+  padding: 16px;
 }
 
 #access_input_entered > div > a > span {
@@ -41,6 +45,11 @@ div.access_input_active > div > a > span {
   align-items: center;
 }
 
+.access_input > div > img {
+  width: 32px;
+  height: 32px;
+}
+
 .access_input > div > p {
   background-color: var(--gray-60);
   padding: 12px 24px 12px 24px;
@@ -50,6 +59,10 @@ div.access_input_active > div > a > span {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.access_input > div > p:hover {
+  cursor: pointer;
 }
 
 .access_input > div > a {
@@ -71,7 +84,6 @@ div.access_input_active > div > a > span {
 }
 
 .access_input > span {
-  margin-top: 32px;
   width: 544px;
   display: flex;
   justify-content: space-between;
@@ -108,4 +120,65 @@ div.access_input_active > div > a > span {
   align-items: center;
   justify-content: center;
   color: var(--black-100);
+}
+
+.access_input > span > p:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  .access_input {
+    height: 50px;
+    padding: 16px;
+    margin-top: 8px;
+  }
+
+  .access_input > div > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .access_input > div > a {
+    
+  }
+
+  div.access_input_active {
+    height: 110px;
+  }
+
+  .access_input > div > p {
+    padding: 6px 12px 6px 12px;
+    
+  }
+
+  .access_input > div > a > span {
+    width: 20px;
+    height: 20px;
+    
+  }
+
+  .access_input > span {
+    width: 100%;
+  }
+
+  .access_input > span > div {
+    width: 200px;
+    height: 34px;
+    padding: 6px 12px 6px 12px;
+  }
+
+  .access_input > span > div > input {
+    
+  }
+
+  .access_input > span > div > input::placeholder {
+    
+  }
+
+  .access_input > span > p {
+    padding: 6px 12px 6px 12px;
+    background-color: var(--white-100);
+    border-radius: 100px;
+    
+  }
 }

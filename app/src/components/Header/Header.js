@@ -11,26 +11,25 @@ const Header = () => {
   const currentPath = location.pathname;
 
   return (
-    <header>
+    <header className={currentPath == '/' ? 'header_main_route' : 'header_other_route'}>
       <img src={Logo} />
       <nav>
         <p onClick={() => navigate('/deposit')}>Points</p>
         <p onClick={() => navigate('/leaderboard')}>Leaderboard</p>
       </nav>
-      {currentPath == '/' ? (
+
+      <div>
+        <p>Connect wallet</p>
+        <img src={Wallet} />
+      </div>
+
+      <span>
         <div>
-          <p>Connect wallet</p>
-          <img src={Wallet} />
+          <img src={LetterE} />
+          <a>0 Points</a>
         </div>
-      ) : (
-        <span>
-          <div>
-            <img src={LetterE} />
-            <a>0 Points</a>
-          </div>
-          <p>0x000...000</p>
-        </span>
-      )}
+        <p>0x000...000</p>
+      </span>
     </header>
   );
 };

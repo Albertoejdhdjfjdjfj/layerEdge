@@ -22,6 +22,11 @@
   margin-top: 12px;
 }
 
+.deposit_to > div > img {
+  width: 145px;
+  height: 32px;
+}
+
 .deposit_to > div > div,
 .deposit_to > div > span {
   height: 39px;
@@ -37,4 +42,48 @@
   font-size: 12px;
   font-weight: 500;
   color: var(--gray-100);
+}
+
+@media screen and (max-width: 375px) {
+  .deposit_to > p {
+    display: flex;
+    padding: 0px 16px 0px 16px;
+  }
+
+  .deposit_to > p > a {
+    font-size: 13px;
+  }
+
+  .deposit_to > div {
+    height: 101px;
+    padding: 16px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 24px;
+    margin-top: 8px;
+  }
+
+  .deposit_to > div > img {
+    width: 91px;
+    height: 20px;
+    position: absolute;
+    transform: translate(-50%, 0);
+    left: 50%;
+    margin-bottom: 49px;
+  }
+
+  .deposit_to > div > div,
+  .deposit_to > div > span {
+    height: 33px;
+  }
+
+  .deposit_to > div > div > p,
+  .deposit_to > div > span > p {
+    font-size: 13px;
+  }
+
+  .deposit_to > div > div > a,
+  .deposit_to > div > span > a {
+    font-size: 11px;
+  }
 }

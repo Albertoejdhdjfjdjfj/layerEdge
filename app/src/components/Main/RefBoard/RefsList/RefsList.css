@@ -6,7 +6,7 @@
 
 .refs_list > p {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .refs_list > p > a {
@@ -14,13 +14,22 @@
   color: var(--gray-100);
 }
 
+.refs_list > p > a:nth-child(2) {
+  margin-left: 359px;
+}
+
+.refs_list > p > a:nth-child(3) {
+  margin-left: 440px;
+}
+
 .refs_list > span {
+  margin-top: 16px;
   display: flex;
   flex-direction: column;
 }
 
 .refs_list > span > div {
-  width: 960px;
+  width: 100%;
   height: 78px;
   display: flex;
   justify-content: center;
@@ -28,11 +37,11 @@
   border-bottom: 1px solid var(--gray-15);
 }
 
+/*style for first ref*/
 .refs_list > span > div:first-child {
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
-/*style for inviting friend*/
 .refs_list > span > div:first-child > span {
   width: 107px;
   display: flex;
@@ -47,11 +56,16 @@
 }
 
 .refs_list > span > div:first-child > a {
+  display: block;
+  text-align: center;
+  width: 289px;
   font-weight: 500;
   color: var(--gray-100);
+  margin-left: 194px;
 }
 
 .refs_list > span > div:first-child > div {
+  margin-left: 229px;
   width: 161px;
   height: 46px;
   padding: 12px 24px 12px 24px;
@@ -62,32 +76,63 @@
   align-items: center;
   font-weight: 500;
 }
-/* style for ref and button  */
-.refs_list > span > div > span {
-  width: 412px;
-  height: 46px;
-  display: flex;
-  justify-content: space-between;
+
+.refs_list > span > div:first-child > div > img {
+  width: 20px;
+  height: 20px;
 }
 
-.refs_list > span > div > span > a {
-  width: 317px;
-  border-radius: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--gray-10);
-  font-weight: 500;
-  color: var(--gray-100);
-}
+@media screen and (max-width: 375px) {
+  .refs_list {
+    width: 100%;
+  }
 
-.refs_list > span > div > span > p {
-  width: 87px;
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--white-100);
-  font-weight: 500;
-  color: var(--black-100);
+  .refs_list > p {
+    display: none;
+  }
+
+  .refs_list > span {
+    margin-top: 0;
+  }
+
+  /*style for first ref*/
+  .refs_list > span > div:first-child {
+    height: 116px;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .refs_list > span > div:first-child > span {
+    width: 0;
+    position: absolute;
+    margin-bottom: 76px;
+  }
+
+  .refs_list > span > div:first-child > span > img {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+
+  .refs_list > span > div:first-child > a {
+    width: 100%;
+    font-weight: 500;
+    color: var(--gray-100);
+    margin-left: 0;
+  }
+
+  .refs_list > span > div:first-child > div {
+    margin-left: 0;
+    width: 125px;
+    height: 34px;
+    padding: 8px 16px 8px 16px;
+    position: absolute;
+    margin-bottom: 66px;
+    margin-left: 180px;
+  }
+
+  .refs_list > span > div:first-child > div > img {
+    width: 16px;
+    height: 16px;
+  }
 }

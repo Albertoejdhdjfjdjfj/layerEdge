@@ -3,16 +3,11 @@
   height: 78px;
   border-bottom: 1px solid rgba(197, 167, 212, 0.15);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.user > div {
-  display: flex;
-  align-items: center;
-}
-
-.user > div > span {
+.user > span {
   width: 32px;
   height: 32px;
   border-radius: 99px;
@@ -23,56 +18,131 @@
   background-color: rgba(133, 117, 142, 0.1);
 }
 
-#first > div > span {
+#first > span {
   background-color: rgba(255, 233, 40, 1);
   color: rgba(18, 15, 20, 1);
 }
 
-#second > div > span {
+#second > span {
   background-color: rgba(224, 224, 222, 1);
   color: rgba(18, 15, 20, 1);
 }
 
-#third > div > span {
+#third > span {
   background-color: rgba(229, 153, 40, 1);
   color: rgba(18, 15, 20, 1);
 }
 
-.user > div > div {
+.user > div {
   margin-left: 126px;
   display: flex;
   align-items: center;
 }
 
-.user > div > div > img {
+.user > div > img {
   width: 32px;
   height: 32px;
 }
 
-.user > div > div > a {
+.user > div > a {
   margin-left: 16px;
   font-weight: 500;
+}
+
+.user > a {
+  position: absolute;
+  margin-left: 461px;
+  font-weight: 500;
+}
+
+.user > a > p {
+  display: none;
 }
 
 .user > p {
-  width: 499px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.user > p > a {
-  margin-left: 16px;
-  font-weight: 500;
-}
-
-.user > p > div {
   width: 161px;
   height: 46px;
   padding: 12px 24px 12px 24px;
   border-radius: 100px;
   background-color: rgba(133, 117, 142, 0.1);
   display: flex;
+  position: absolute;
+  margin-left: 799px;
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
+}
+
+.user > p > img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  .user {
+    width: 100%;
+    height: 118px;
+    border-bottom: 1px solid rgba(197, 167, 212, 0.15);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .user > span {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-bottom: 78px;
+  }
+
+  .user > div {
+    margin-left: 0;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  .user > div > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .user > div > a {
+    margin-left: 8px;
+    
+  }
+
+  .user > a {
+    position: absolute;
+    margin-left: 180px;
+    margin-bottom: 16px;
+    
+  }
+
+  .user > a > p {
+    display: block;
+    font-size: 11px;
+    color: var(--gray-100);
+  }
+
+  .user > p {
+    width: 125px;
+    height: 34px;
+    
+    padding: 8px 16px 8px 16px;
+    border-radius: 100px;
+    background-color: rgba(133, 117, 142, 0.1);
+    display: flex;
+    position: absolute;
+    margin-left: 180px;
+    margin-bottom: 68px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+  }
+
+  .user > p > img {
+    width: 16px;
+    height: 16px;
+  }
 }

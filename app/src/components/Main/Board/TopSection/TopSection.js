@@ -8,14 +8,14 @@ const TopSection = () => {
       <span>
         <p>26675</p>
       </span>
-      <div className="user_name">
+      <div>
         <a>Saurav_Devrani</a>
         <p>
           <img src={PenEdit} />
           Edit
         </p>
       </div>
-      <div className="invited_by">
+      <div>
         <a>DaoForFun</a>
         <span>Invited by</span>
       </div>

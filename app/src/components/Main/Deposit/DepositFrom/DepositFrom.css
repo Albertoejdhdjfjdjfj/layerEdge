@@ -24,6 +24,7 @@
   border-radius: 24px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .deposit_from > div > span {
@@ -52,4 +53,37 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 375px) {
+  .deposit_from > p {
+    padding: 0px 16px 0px 16px;
+  }
+
+  .deposit_from > p > a {
+    font-size: 13px;
+  }
+
+  .deposit_from > div {
+    height: 64px;
+    margin-top: 8px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 20px;
+  }
+
+  .deposit_from > div > span > p,
+  .deposit_from > span > p {
+    font-size: 13px;
+  }
+
+  .deposit_from > div > span > a,
+  .deposit_from > span > a {
+    font-size: 11px;
+  }
+
+  .deposit_from > span {
+    height: 33px;
+    margin-top: 8px;
+    padding: 0px 16px 0px 16px;
+  }
 }

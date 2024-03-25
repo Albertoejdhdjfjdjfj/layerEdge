@@ -13,9 +13,12 @@ header > img {
 }
 
 header > nav {
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
   width: 286px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 header > nav > p {
@@ -23,6 +26,14 @@ header > nav > p {
   border-radius: 100px;
   border: 1px solid var(--gray-15);
   font-weight: 500;
+}
+
+header > nav > p:hover {
+  cursor: pointer;
+}
+
+.header_other_route > div {
+  display: none;
 }
 
 header > div {
@@ -35,6 +46,10 @@ header > div {
   background-color: var(--white-100);
 }
 
+header > div:hover {
+  cursor: pointer;
+}
+
 header > div > p {
   font-weight: 500;
   color: var(--black-100);
@@ -43,6 +58,10 @@ header > div > p {
 header > div > img {
   width: 24px;
   height: 24px;
+}
+
+.header_main_route > span {
+  display: none;
 }
 
 header > span {
@@ -72,4 +91,71 @@ header > span > p {
   justify-content: center;
   align-items: center;
   font-weight: 500;
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    width: calc(343 * 100vw / 375);
+    padding: 0 0 16px 0;
+    height: 98px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-15);
+  }
+
+  header > img {
+    width: 91px;
+    height: 20px;
+    position: absolute;
+    transform: translate(-50%, 0);
+    left: 50%;
+    margin-bottom: 46px;
+  }
+
+  header > nav {
+    position: relative;
+    transform: translate(0, 0);
+    left: 0;
+    width: 183px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header > nav > p {
+    padding: 8px 16px 8px 16px;
+    border-radius: 100px;
+    border: 1px solid var(--gray-15);
+    font-weight: 500;
+  }
+
+  .header_other_route > div {
+    display: flex;
+  }
+
+  header > div {
+    width: 144px;
+    height: 34px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-100);
+  }
+
+  header > div > p {
+    font-weight: 500;
+    color: var(--black-100);
+  }
+
+  header > div > img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .header_other_route > span {
+    display: none;
+  }
 }

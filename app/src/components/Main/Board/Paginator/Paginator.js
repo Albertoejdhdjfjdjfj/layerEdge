@@ -1,5 +1,6 @@
 import React from 'react';
 import Arrow from '../../../../assets/images/Arrow.svg';
+import Dots from '../../../../assets/images/Dots.svg';
 import './Paginator.css';
 
 const Paginator = () => {
@@ -14,7 +15,7 @@ const Paginator = () => {
         <p>3</p>
         <p>4</p>
         <p>5</p>
-        <a>...</a>
+        <img src={Dots} />
         <p>10</p>
       </div>
       <p className="arrow_right">
