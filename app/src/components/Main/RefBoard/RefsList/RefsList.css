@@ -53,6 +53,7 @@
 .refs_list > span > div:first-child > span > img {
   width: 32px;
   height: 32px;
+  margin-right: 16px;
 }
 
 .refs_list > span > div:first-child > a {
@@ -117,6 +118,7 @@
   .refs_list > span > div:first-child > span > img {
     width: calc(32 * 100vw / 1000);
     height: calc(32 * 100vw / 1000);
+    margin-right: calc(16 * 100vw / 1000);
   }
 
   .refs_list > span > div:first-child > a {
