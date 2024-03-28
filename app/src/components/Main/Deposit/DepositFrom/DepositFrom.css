@@ -55,6 +55,42 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 555px) {
+  .deposit_from > p {
+    padding: calc(0 * 100vw / 375) calc(16 * 100vw / 375) calc(0 * 100vw / 375)
+      calc(16 * 100vw / 375);
+  }
+
+  .deposit_from > p > a {
+    font-size: calc(13 * 100vw / 375);
+  }
+
+  .deposit_from > div {
+    height: calc(64 * 100vw / 375);
+    margin-top: calc(8 * 100vw / 375);
+    padding: calc(8 * 100vw / 375) calc(16 * 100vw / 375) calc(8 * 100vw / 375)
+      calc(16 * 100vw / 375);
+    border-radius: calc(20 * 100vw / 375);
+  }
+
+  .deposit_from > div > span > p,
+  .deposit_from > span > p {
+    font-size: calc(13 * 100vw / 375);
+  }
+
+  .deposit_from > div > span > a,
+  .deposit_from > span > a {
+    font-size: calc(11 * 100vw / 375);
+  }
+
+  .deposit_from > span {
+    height: 33px;
+    margin-top: calc(8 * 100vw / 375);
+    padding: calc(0 * 100vw / 375) calc(16 * 100vw / 375) calc(0 * 100vw / 375)
+      calc(16 * 100vw / 375);
+  }
+}
+
 @media screen and (max-width: 375px) {
   .deposit_from > p {
     padding: 0px 16px 0px 16px;

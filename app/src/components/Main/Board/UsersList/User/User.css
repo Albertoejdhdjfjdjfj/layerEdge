@@ -78,6 +78,112 @@
   height: 20px;
 }
 
+@media screen and (max-width: 1000px) {
+  .user {
+    width: 100%;
+    height: calc(78 * 100vw / 1000);
+  }
+
+  .user > div {
+    margin-left: calc(126 * 100vw / 1000);
+  }
+
+  .user > div > img {
+    width: calc(32 * 100vw / 1000);
+    height: calc(32 * 100vw / 1000);
+  }
+
+  .user > div > a {
+    margin-left: calc(16 * 100vw / 1000);
+  }
+
+  .user > a {
+    margin-left: calc(461 * 100vw / 1000);
+  }
+
+  .user > p {
+    width: calc(161 * 100vw / 1000);
+    height: calc(46 * 100vw / 1000);
+    padding: calc(12 * 100vw / 1000) calc(24 * 100vw / 1000) calc(12 * 100vw / 1000)
+      calc(24 * 100vw / 1000);
+    border-radius: calc(100 * 100vw / 1000);
+    margin-left: calc(799 * 100vw / 1000);
+  }
+
+  .user > p > img {
+    width: calc(20 * 100vw / 1000);
+    height: calc(20 * 100vw / 1000);
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .user {
+    width: 100%;
+    height: calc(118 * 100vw / 375);
+    border-bottom: 1px solid rgba(197, 167, 212, 0.15);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .user > span {
+    width: calc(24 * 100vw / 375);
+    height: calc(24 * 100vw / 375);
+    position: absolute;
+    margin-bottom: calc(78 * 100vw / 375);
+  }
+
+  .user > div {
+    margin-left: 0;
+    margin-bottom: calc(24 * 100vw / 375);
+    display: flex;
+    align-items: center;
+  }
+
+  .user > div > img {
+    width: calc(24 * 100vw / 375);
+    height: calc(24 * 100vw / 375);
+  }
+
+  .user > div > a {
+    margin-left: calc(8 * 100vw / 375);
+  }
+
+  .user > a {
+    position: absolute;
+    margin-left: calc(180 * 100vw / 375);
+    margin-bottom: calc(16 * 100vw / 375);
+  }
+
+  .user > a > p {
+    display: block;
+    font-size: calc(11 * 100vw / 375);
+    color: var(--gray-100);
+  }
+
+  .user > p {
+    width: calc(125 * 100vw / 375);
+    height: calc(34 * 100vw / 375);
+
+    padding: calc(8 * 100vw / 375) calc(16 * 100vw / 375) calc(8 * 100vw / 375)
+      calc(16 * 100vw / 375);
+    border-radius: calc(100 * 100vw / 375);
+    background-color: rgba(133, 117, 142, 0.1);
+    display: flex;
+    position: absolute;
+    margin-left: calc(180 * 100vw / 375);
+    margin-bottom: calc(68 * 100vw / 375);
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+  }
+
+  .user > p > img {
+    width: calc(16 * 100vw / 375);
+    height: calc(16 * 100vw / 375);
+  }
+}
+
 @media screen and (max-width: 375px) {
   .user {
     width: 100%;
@@ -109,14 +215,12 @@
 
   .user > div > a {
     margin-left: 8px;
-    
   }
 
   .user > a {
     position: absolute;
     margin-left: 180px;
     margin-bottom: 16px;
-    
   }
 
   .user > a > p {
@@ -128,7 +232,7 @@
   .user > p {
     width: 125px;
     height: 34px;
-    
+
     padding: 8px 16px 8px 16px;
     border-radius: 100px;
     background-color: rgba(133, 117, 142, 0.1);

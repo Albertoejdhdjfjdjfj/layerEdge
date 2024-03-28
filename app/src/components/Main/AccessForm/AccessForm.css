@@ -2,6 +2,7 @@
   position: relative;
   width: 640px;
   margin-top: 215px;
+  margin-bottom: 258px;
   border-radius: 32px;
   border: 1px solid var(--white-5);
   background-color: var(--white-5);
@@ -9,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .access_form::before {
@@ -31,28 +33,35 @@
   font-size: 24px;
 }
 
+@media screen and (max-width: 555px) {
+  .access_form {
+    width: calc(343 * 100vw / 375);
+    min-height: calc(318 * 100vw / 375);
+    margin-top: calc(77 * 100vw / 375);
+    padding: calc(20 * 100vw / 375);
+    margin-bottom: calc(46 * 100vw / 375);
+  }
+
+  .access_form::before {
+    width: calc(311 * 100vw / 375);
+  }
+  .access_form > h2 {
+    margin-bottom: calc(20 * 100vw / 375);
+    font-size: calc(24 * 100vw / 375);
+  }
+}
+
 @media screen and (max-width: 375px) {
   .access_form {
     width: 343px;
     min-height: 318px;
     margin-top: 77px;
     padding: 20px;
+    margin-bottom: 46px;
   }
 
   .access_form::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    height: 1px;
     width: 311px;
-    background-image: linear-gradient(
-      to left,
-      rgba(255, 255, 255, 0),
-      rgba(255, 215, 74, 1),
-      rgba(240, 123, 168, 1),
-      rgba(137, 20, 229, 1),
-      rgba(137, 20, 229, 0)
-    );
   }
   .access_form > h2 {
     margin-bottom: 20px;

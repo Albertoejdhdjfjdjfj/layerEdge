@@ -36,7 +36,63 @@
   color: var(--black-100);
 }
 
+@media screen and (max-width: 1000px) {
+  .ref * {
+    font-size: calc(16 * 100vw / 1000);
+  }
+
+  .ref {
+    width: 100%;
+    height: calc(78 * 100vw / 1000);
+  }
+
+  .ref > span {
+    width: calc(412 * 100vw / 1000);
+    height: calc(46 * 100vw / 1000);
+  }
+
+  .ref > span > a {
+    width: calc(317 * 100vw / 1000);
+    border-radius: calc(24 * 100vw / 1000);
+  }
+
+  .ref > span > p {
+    width: calc(87 * 100vw / 1000);
+    border-radius: calc(100 * 100vw / 1000);
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .ref * {
+    font-size: calc(13 * 100vw / 375);
+  }
+
+  .ref {
+    width: 100%;
+    height: calc(116 * 100vw / 375);
+  }
+
+  .ref > span {
+    width: calc(343 * 100vw / 375);
+    height: calc(34 * 100vw / 375);
+  }
+
+  .ref > span > a {
+    width: calc(253 * 100vw / 375);
+    border-radius: calc(20 * 100vw / 375);
+  }
+
+  .ref > span > p {
+    width: calc(82 * 100vw / 375);
+    border-radius: calc(100 * 100vw / 375);
+  }
+}
+
 @media screen and (max-width: 375px) {
+  .ref * {
+    font-size: 13px;
+  }
+
   .ref {
     width: 100%;
     height: 116px;
@@ -45,15 +101,18 @@
   .ref > span {
     width: 343px;
     height: 34px;
+
   }
 
   .ref > span > a {
     width: 253px;
+    height: 34px;
     border-radius: 20px;
   }
 
   .ref > span > p {
     width: 82px;
+    height: 34px;
     border-radius: 100px;
   }
 }

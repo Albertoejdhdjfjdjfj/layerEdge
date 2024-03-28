@@ -12,11 +12,11 @@ const Deposit = () => {
     <div className="deposit">
       <h2>
         <a>Deposit</a>
-        <a>Withdraw</a>
+        <a onClick={changeActive}>Withdraw</a>
       </h2>
       <DepositFrom />
       <DepositTo />
-      <p onClick={changeActive}>Bridge</p>
+      <p>Bridge</p>
       {popUpActive && <PupUp changeActive={changeActive} />}
     </div>
   );

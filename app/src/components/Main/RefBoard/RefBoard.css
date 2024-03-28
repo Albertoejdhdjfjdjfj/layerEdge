@@ -1,11 +1,36 @@
 .ref_board {
   width: 960px;
+  margin-bottom: 232px;
   display: flex;
   flex-direction: column;
 }
 
+@media screen and (max-width: 1000px) {
+  .ref_board * {
+    font-size: calc(16 * 100vw / 1000);
+  }
+
+  .ref_board {
+    width: calc(960 * 100vw / 1000);
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .ref_board * {
+    font-size: calc(13 * 100vw / 375);
+  }
+
+  .ref_board {
+    width: calc(343 * 100vw / 375);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .ref_board {
+    margin-bottom: 16px;
     width: 343px;
     display: flex;
     flex-direction: column;

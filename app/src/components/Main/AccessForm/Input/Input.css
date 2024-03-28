@@ -126,6 +126,51 @@ div.access_input_active > div > a > span {
   cursor: pointer;
 }
 
+@media screen and (max-width: 555px) {
+  .access_input {
+    height: calc(50 * 100vw / 375);
+    padding: calc(16 * 100vw / 375);
+    margin-top: calc(8 * 100vw / 375);
+  }
+
+  .access_input > div > img {
+    width: calc(20 * 100vw / 375);
+    height: calc(20 * 100vw / 375);
+  }
+
+  div.access_input_active {
+    height: calc(110 * 100vw / 375);
+  }
+
+  .access_input > div > p {
+    padding: calc(6 * 100vw / 375) calc(12 * 100vw / 375) calc(6 * 100vw / 375)
+      calc(12 * 100vw / 375);
+  }
+
+  .access_input > div > a > span {
+    width: calc(20 * 100vw / 375);
+    height: calc(20 * 100vw / 375);
+  }
+
+  .access_input > span {
+    width: 100%;
+  }
+
+  .access_input > span > div {
+    width: calc(200 * 100vw / 375);
+    height: calc(34 * 100vw / 375);
+    padding: calc(6 * 100vw / 375) calc(12 * 100vw / 375) calc(6 * 100vw / 375)
+      calc(12 * 100vw / 375);
+  }
+
+  .access_input > span > p {
+    padding: calc(6 * 100vw / 375) calc(12 * 100vw / 375) calc(6 * 100vw / 375)
+      calc(12 * 100vw / 375);
+    background-color: var(--white-100);
+    border-radius: calc(100 * 100vw / 375);
+  }
+}
+
 @media screen and (max-width: 375px) {
   .access_input {
     height: 50px;
@@ -139,7 +184,6 @@ div.access_input_active > div > a > span {
   }
 
   .access_input > div > a {
-    
   }
 
   div.access_input_active {
@@ -148,13 +192,11 @@ div.access_input_active > div > a > span {
 
   .access_input > div > p {
     padding: 6px 12px 6px 12px;
-    
   }
 
   .access_input > div > a > span {
     width: 20px;
     height: 20px;
-    
   }
 
   .access_input > span {
@@ -168,17 +210,14 @@ div.access_input_active > div > a > span {
   }
 
   .access_input > span > div > input {
-    
   }
 
   .access_input > span > div > input::placeholder {
-    
   }
 
   .access_input > span > p {
     padding: 6px 12px 6px 12px;
     background-color: var(--white-100);
     border-radius: 100px;
-    
   }
 }
