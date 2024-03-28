@@ -46,6 +46,10 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .paginator * {
+    font-size: calc(16 * 100vw / 1000);
+  }
+
   .paginator {
     margin-top: calc(64 * 100vw / 1000);
     margin-bottom: calc(64 * 100vw / 1000);
@@ -74,6 +78,10 @@
 }
 
 @media screen and (max-width: 555px) {
+  .paginator * {
+    font-size: calc(13 * 100vw / 375);
+  }
+
   .paginator {
     margin-top: calc(24 * 100vw / 375);
     margin-bottom: calc(64 * 100vw / 375);
