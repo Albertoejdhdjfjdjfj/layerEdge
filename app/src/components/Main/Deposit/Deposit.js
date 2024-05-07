@@ -3,6 +3,7 @@ import { useBool } from '../../../assets/functions/hooks/customHooks';
 import DepositFrom from './DepositFrom/DepositFrom';
 import DepositTo from './DepositTo/DepositTo';
 import PupUp from './Pop-up/Pop-up';
+import Tiers from './Tiers/Tiers';
 import './Deposit.css';
 
 const Deposit = () => {
@@ -15,6 +16,7 @@ const Deposit = () => {
         <a onClick={changeActive}>Withdraw</a>
       </h2>
       <DepositFrom />
+      <Tiers />
       <DepositTo />
       <p>Bridge</p>
       {popUpActive && <PupUp changeActive={changeActive} />}

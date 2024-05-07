@@ -1,0 +1,30 @@
+.recent_joins {
+  width: 384px;
+  border-radius: 16px;
+  background-color: var(--gray-10);
+}
+
+.recent_joins > p {
+  width: 100%;
+  border-bottom: 1px solid var(--gray-15);
+  font-weight: 500;
+  padding: 16px;
+}
+
+@media screen and (max-width: 375px) {
+  .recent_joins {
+    margin-top: 64px;
+    width: 343px;
+    height: 262px;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: var(--gray-10);
+  }
+
+  .recent_joins > p {
+    width: 100%;
+    border-bottom: 1px solid var(--gray-15);
+    font-weight: 500;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,10 @@
+.user_assets{
+   width: 100%; 
+   display: flex;
+   flex-direction: column; 
+   align-items: flex-start;
+}
+
+.user_assets > a{
+     font-size: 24px;
+}

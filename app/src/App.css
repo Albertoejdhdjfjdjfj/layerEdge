@@ -12,6 +12,7 @@
   --white-5: rgba(241, 235, 244, 0.05);
   --white-100: rgba(241, 235, 244, 1);
   --black-100: rgba(18, 15, 20, 1);
+  --black-80: rgba(18, 15, 20, 0.8);
 }
 
 * {
@@ -42,6 +43,11 @@ body {
 @media screen and (max-width: 555px) {
   * {
     font-size: calc(13 * 100vw / 375);
+  }
+
+  body {
+    background-image: url('./assets/images/MainBackroung2.png');
+    background-size: 140% 130%;
   }
 }
 

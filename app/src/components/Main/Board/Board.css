@@ -6,8 +6,17 @@
   align-items: center;
 }
 
+.board > .recent_joins {
+  position: absolute;
+  left: 48px;
+}
+
 @media screen and (max-width: 375px) {
   .board {
     width: 343px;
+  }
+
+  .board > .recent_joins {
+    position: static;
   }
 }

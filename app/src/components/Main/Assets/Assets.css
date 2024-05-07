@@ -1,0 +1,207 @@
+.assets_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 15, 20, 0.8);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.assets {
+  position: fixed;
+  width: 800px;
+  height: 603px;
+  margin-top: 239px;
+  margin-bottom: 258px;
+  border-radius: 32px;
+  border: 1px solid var(--white-5);
+  background-color: var(--white-5);
+  padding: 32px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.assets::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 12px;
+  right: 12px;
+  height: 1px;
+  width: 610px;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 215, 74, 1),
+    rgba(240, 123, 168, 1),
+    rgba(137, 20, 229, 1),
+    rgba(137, 20, 229, 0)
+  );
+}
+
+.assets > h2 {
+  font-size: 32px;
+}
+
+.assets > div {
+  width: 449px;
+  height: 46px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray-15);
+  border-radius: 24px;
+}
+
+.assets > div > input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.assets > div > input::placeholder {
+  font-size: 16px;
+  color: var(--gray-60);
+}
+
+.assets > div > img {
+  width: 16px;
+  height: 16px;
+}
+
+.assets > span {
+  width: 100%;
+  display: flex;
+}
+
+.tokens {
+  display: none;
+}
+
+.networks:has(.selected_network) ~ .tokens {
+  display: flex;
+}
+
+@media screen and (max-width: 375px) {
+  .assets_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 15, 20, 0.8);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .assets {
+    position: fixed;
+    width: 343px;
+    height: 476px;
+    margin-top: 96px;
+    margin-bottom: 95px;
+    border-radius: 32px;
+    border: 1px solid var(--white-5);
+    background-color: var(--white-5);
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .assets::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 12px;
+    right: 12px;
+    height: 1px;
+    width: 343px;
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0),
+      rgba(255, 215, 74, 1),
+      rgba(240, 123, 168, 1),
+      rgba(137, 20, 229, 1),
+      rgba(137, 20, 229, 0)
+    );
+  }
+
+  .assets > h2 {
+    font-size: 24px;
+  }
+
+  .assets > div {
+    margin-top: 16px;
+    width: 303px;
+    height: 34px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gray-15);
+    border-radius: 100px;
+  }
+
+  .assets > div > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: inherit;
+  }
+  .assets > div > input::placeholder {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--gray-60);
+  }
+
+  .assets > div > img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .assets > span {
+    margin-top: 32px;
+    width: 100%;
+    height: 446px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    margin-right: 4px;
+  }
+
+  .assets > span::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .assets > span::-webkit-scrollbar-thumb {
+    height: 20px;
+    background-color: var(--white-100);
+    border-radius: 100px;
+  }
+
+  .assets > span::-webkit-scrollbar-track {
+    background-color: var(--white-5);
+    height: 315px;
+  }
+
+  .tokens {
+    display: flex;
+  }
+
+  .networks:has(.selected_network) ~ .tokens {
+    display: flex;
+  }
+}

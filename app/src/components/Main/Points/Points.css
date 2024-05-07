@@ -1,0 +1,14 @@
+.points {
+  width: 960px;
+  margin-top: 64px;
+  margin-bottom: 154px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 375px) {
+  .points {
+    width: 343px;
+    margin-bottom: 32px;
+  }
+}

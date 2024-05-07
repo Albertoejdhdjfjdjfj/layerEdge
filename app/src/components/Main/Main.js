@@ -4,6 +4,9 @@ import AccessForm from './AccessForm/AccessForm';
 import Board from './Board/Board';
 import Deposit from './Deposit/Deposit';
 import RefBoard from './RefBoard/RefBoard';
+import Assets from './Assets/Assets';
+import WarningPopUp from '../../components/Main/Warning/WarningPopUp';
+import Points from './Points/Points';
 import './Main.css';
 
 const Main = () => {
@@ -14,6 +17,9 @@ const Main = () => {
         <Route path="/leaderboard" element={<Board />} />
         <Route path="/deposit" element={<Deposit />} />
         <Route path="/user" element={<RefBoard />} />
+        <Route path="/assets" element={<Assets />} />
+        <Route path="/warning" element={<WarningPopUp />} />
+        <Route path="/points" element={<Points />} />
       </Routes>
     </div>
   );

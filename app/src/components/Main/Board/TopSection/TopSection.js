@@ -5,24 +5,18 @@ import './TopSection.css';
 const TopSection = () => {
   return (
     <div className="top_section">
-      <span>
-        <p>26675</p>
-      </span>
       <div>
-        <a>Saurav_Devrani</a>
-        <p>
-          <img src={PenEdit} />
-          Edit
-        </p>
+        <a>1.0001 BTC</a>
+        <span>Staked</span>
       </div>
       <div>
-        <a>DaoForFun</a>
-        <span>Invited by</span>
+        <a>100.05%</a>
+        <span>Multiplier</span>
       </div>
-      <p>
-        <a>0</a>
+      <div>
+        <a>230 420</a>
         <span>Points</span>
-      </p>
+      </div>
     </div>
   );
 };

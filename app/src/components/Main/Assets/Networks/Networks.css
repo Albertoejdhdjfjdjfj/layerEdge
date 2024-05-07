@@ -1,0 +1,182 @@
+.networks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  height: 400px;
+  margin-right: 8px;
+  padding-bottom: 31px;
+}
+
+.networks > a {
+  margin-left: 32px;
+  font-weight: 500;
+  color: var(--gray-100);
+}
+
+.network_select {
+  display: none;
+}
+
+.networks > span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 24px;
+  overflow-y: scroll;
+}
+
+.networks > span::-webkit-scrollbar {
+  width: 4px;
+}
+
+.networks > span::-webkit-scrollbar-thumb {
+  background-color: var(--white-100);
+  border-radius: 100px;
+}
+
+.networks > span::-webkit-scrollbar-track {
+  background-color: var(--white-5);
+}
+
+.networks > span > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 336px;
+  padding: 12px 16px;
+  margin-top: 8px;
+  border: 1px solid var(--gray-15);
+  border-radius: 100px;
+}
+
+.networks img {
+  width: 20px;
+  height: 20px;
+}
+
+.selected_network {
+  background-color: var(--white-100);
+}
+
+.selected_network > div > p {
+  color: var(--black-100);
+}
+
+.networks > span > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.networks > span > div > div > a {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--gray-100);
+}
+
+.networks > span > div > div > a,
+.networks > span > div > div > p {
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 375px) {
+  .networks {
+    width: 100%;
+    padding: 0 20px;
+    margin-right: 0;
+  }
+
+  .networks > a {
+    font-size: 0;
+    margin-left: 16px;
+  }
+
+  .networks > a::after {
+    content: 'Network';
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--white-100);
+  }
+
+  .network_select {
+    width: max-content;
+    height: min-content;
+    padding: 8px 12px;
+    border: 1px solid var(--gray-15);
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .network_select > div {
+    display: flex;
+  }
+
+  .network_select > div > a {
+    display: none;
+  }
+
+  .network_select > img,
+  .network_select > div > p {
+    margin-left: 8px;
+  }
+
+  .network_select_active {
+    background-color: var(--white-100);
+  }
+
+  .networks img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .network_select_active > div > p {
+    color: var(--black-100);
+  }
+
+  .network_select_active > img {
+    transform: rotate(-90deg);
+  }
+
+  .networks > span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 303px;
+    margin-top: 0;
+    overflow-y: hidden;
+  }
+
+  .networks > span > div {
+    width: max-content;
+    height: min-content;
+    padding: 8px 12px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border: 1px solid var(--gray-15);
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .networks > span > div > img {
+    display: none;
+  }
+
+  .selected_network {
+    background-color: inherit;
+  }
+
+  .selected_network > div > p {
+    color: var(--white-100);
+  }
+
+  .networks > span > div > div > a {
+    display: none;
+  }
+}

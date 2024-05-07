@@ -4,7 +4,15 @@ import Avatar from '../../../../../assets/images/Avatar.svg';
 import LetterE from '../../../../../assets/images/LetterE.svg';
 import './User.css';
 
-const User = ({ order, name, invitedBy, points, linkTo = '/user' }) => {
+const User = ({
+  order,
+  name,
+  invitedBy,
+  points,
+  linkTo = '/user',
+  stakingPoints = 0,
+  bonusPoints = 0
+}) => {
   const navigate = useNavigate();
   return (
     <div
@@ -26,6 +34,16 @@ const User = ({ order, name, invitedBy, points, linkTo = '/user' }) => {
         <img src={LetterE} />
         <a>{points}</a>
       </p>
+      <div>
+        <p>
+          <span>Staking Points</span>
+          <a>{stakingPoints}</a>
+        </p>
+        <p>
+          <span>Bonus Points</span>
+          <a>{bonusPoints}</a>
+        </p>
+      </div>
     </div>
   );
 };

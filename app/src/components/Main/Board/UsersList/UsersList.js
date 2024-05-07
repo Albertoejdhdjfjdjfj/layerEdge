@@ -12,6 +12,7 @@ const UsersList = () => {
         <a>Points</a>
       </p>
       <span>
+        <User order="421 681" name="DHarveyxSpecteri" invitedBy="Imnobody008" points="0" />
         <User order="1" name="Durio07" invitedBy="Imnobody008" points="210 165 961" />
         <User order="2" name="OXNEOSU" invitedBy="XMIRROR" points="153 261 900" />
         <User order="3" name="000" invitedBy="Luke" points="131 957 258" />
