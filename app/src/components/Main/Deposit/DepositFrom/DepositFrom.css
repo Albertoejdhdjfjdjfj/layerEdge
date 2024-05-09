@@ -1,12 +1,12 @@
 .deposit_from {
   width: 100%;
-  margin-top: 32px;
+  margin-top: calc(32 * 100vw/var(--screen-width-desc));
   display: flex;
   flex-direction: column;
 }
 
 .deposit_from > p {
-  padding: 0px 24px 0px 24px;
+  padding: calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc));
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -17,11 +17,11 @@
 }
 
 .deposit_from > div {
-  height: 80px;
-  margin-top: 12px;
-  padding: 16px 24px 16px 24px;
-  border: 1px solid var(--gray-15);
-  border-radius: 24px;
+  height: calc(80 * 100vw/var(--screen-width-desc));
+  margin-top: calc(12 * 100vw/var(--screen-width-desc));
+  padding: calc(16 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc));
+  border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-15);
+  border-radius: calc(24 * 100vw/var(--screen-width-desc));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,86 +40,51 @@
 
 .deposit_from > div > span > a,
 .deposit_from > span > a {
-  font-size: 12px;
+  font-size: calc(12 * 100vw/var(--screen-width-desc));
   font-weight: 500;
   color: var(--gray-100);
 }
 
 .deposit_from > span {
-  height: 39px;
-  margin-top: 12px;
-  padding: 0px 24px 0px 24px;
+  height: calc(39 * 100vw/var(--screen-width-desc));
+  margin-top: calc(12 * 100vw/var(--screen-width-desc));
+  padding: calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc));
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-@media screen and (max-width: 555px) {
+
+@media screen and (max-width: 700px) {
   .deposit_from > p {
-    padding: calc(0 * 100vw / 375) calc(16 * 100vw / 375) calc(0 * 100vw / 375)
-      calc(16 * 100vw / 375);
+    padding: calc(0 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc));
   }
 
   .deposit_from > p > a {
-    font-size: calc(13 * 100vw / 375);
+    font-size: calc(13 * 100vw/var(--screen-width-desc));
   }
 
   .deposit_from > div {
-    height: calc(64 * 100vw / 375);
-    margin-top: calc(8 * 100vw / 375);
-    padding: calc(8 * 100vw / 375) calc(16 * 100vw / 375) calc(8 * 100vw / 375)
-      calc(16 * 100vw / 375);
-    border-radius: calc(20 * 100vw / 375);
+    height: calc(64 * 100vw/var(--screen-width-desc));
+    margin-top: calc(8 * 100vw/var(--screen-width-desc));
+    padding: calc(8 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(8 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc));
+    border-radius: calc(20 * 100vw/var(--screen-width-desc));
   }
 
   .deposit_from > div > span > p,
   .deposit_from > span > p {
-    font-size: calc(13 * 100vw / 375);
+    font-size: calc(13 * 100vw/var(--screen-width-desc));
   }
 
   .deposit_from > div > span > a,
   .deposit_from > span > a {
-    font-size: calc(11 * 100vw / 375);
+    font-size: calc(11 * 100vw/var(--screen-width-desc));
   }
 
   .deposit_from > span {
-    height: 33px;
-    margin-top: calc(8 * 100vw / 375);
-    padding: calc(0 * 100vw / 375) calc(16 * 100vw / 375) calc(0 * 100vw / 375)
-      calc(16 * 100vw / 375);
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .deposit_from > p {
-    padding: 0px 16px 0px 16px;
-  }
-
-  .deposit_from > p > a {
-    font-size: 13px;
-  }
-
-  .deposit_from > div {
-    height: 64px;
-    margin-top: 8px;
-    padding: 8px 16px 8px 16px;
-    border-radius: 20px;
-  }
-
-  .deposit_from > div > span > p,
-  .deposit_from > span > p {
-    font-size: 13px;
-  }
-
-  .deposit_from > div > span > a,
-  .deposit_from > span > a {
-    font-size: 11px;
-  }
-
-  .deposit_from > span {
-    height: 33px;
-    margin-top: 8px;
-    padding: 0px 16px 0px 16px;
+    height: calc(33 * 100vw/var(--screen-width-desc));
+    margin-top: calc(8 * 100vw/var(--screen-width-desc));
+    padding: calc(0 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc));
   }
 }

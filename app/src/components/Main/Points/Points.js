@@ -2,6 +2,7 @@ import React from 'react';
 import UserHeader from './UserHeader/UserHeader';
 import MileStones from './MileStones/MileStones';
 import UserAssets from './UserAssets/UserAssets';
+import UserTeam from './UserTeam/UserTeam';
 import './Points.css';
 
 const Points = () => {
@@ -10,6 +11,7 @@ const Points = () => {
       <UserHeader />
       <MileStones />
       <UserAssets />
+      <UserTeam />
     </div>
   );
 };

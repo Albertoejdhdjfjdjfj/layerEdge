@@ -7,6 +7,8 @@ import RefBoard from './RefBoard/RefBoard';
 import Assets from './Assets/Assets';
 import WarningPopUp from '../../components/Main/Warning/WarningPopUp';
 import Points from './Points/Points';
+import ProfileEdit from './ProfileEdit/ProfileEdit';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 import './Main.css';
 
 const Main = () => {
@@ -20,6 +22,8 @@ const Main = () => {
         <Route path="/assets" element={<Assets />} />
         <Route path="/warning" element={<WarningPopUp />} />
         <Route path="/points" element={<Points />} />
+        <Route path="/edit" element={<ProfileEdit />} />
+        <Route path="/history" element={<TransactionHistory />} />
       </Routes>
     </div>
   );

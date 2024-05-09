@@ -2,7 +2,6 @@
 
 :root {
   --screen-width-desc: 1920;
-  --screen-width-middle: 755;
   --screen-width-mob: 375;
   --gray-100: rgba(133, 117, 142, 1);
   --gray-10: rgba(133, 117, 142, 0.1);
@@ -19,7 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: calc(16*100vw/var(--screen-width-desc));
   font-weight: 400;
   font-family: 'Satoshi';
   color: var(--white-100);
@@ -40,19 +39,22 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 555px) {
-  * {
-    font-size: calc(13 * 100vw / 375);
+@media screen and (max-width: 700px) {
+  *{
+    font-size: calc(13*100vw/var(--screen-width-desc));
   }
-
-  body {
-    background-image: url('./assets/images/MainBackroung2.png');
-    background-size: 140% 130%;
+  :root {
+    --screen-width-desc: 375;
   }
 }
 
+
 @media screen and (max-width: 375px) {
-  * {
-    font-size: 13px;
+  *{
+    font-size: calc(13*100vw/var(--screen-width-desc));
+  }
+
+  :root {
+    --screen-width-desc: 375;
   }
 }

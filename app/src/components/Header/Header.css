@@ -3,9 +3,10 @@
 }
 
 header {
+  position: relative;
   width: 100%;
-  padding: 0 48px 0 48px;
-  height: 96px;
+  padding: 0 calc(48*100vw/var( --screen-width-desc)) 0 calc(48*100vw/var( --screen-width-desc));
+  height: calc(96*100vw/var( --screen-width-desc));
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,10 +15,10 @@ header {
 header:after {
   position: absolute;
   content: '';
-  height: 1px;
-  top: 96px;
-  right: 48px;
-  left: 48px;
+  height: calc(1*100vw/var(--screen-width-desc));
+  top: calc(96*100vw/var( --screen-width-desc));
+  right: calc(48*100vw/var( --screen-width-desc));
+  left: calc(48*100vw/var( --screen-width-desc));
   background-color: var(--white-100);
 }
 
@@ -31,30 +32,30 @@ header > span > div {
 }
 
 header > span > img {
-  width: 145px;
-  height: 32px;
+  width: calc(145*100vw/var(--screen-width-desc));
+  height: calc(32*100vw/var( --screen-width-desc));
 }
 
 header > span > p {
-  padding: 16px 32px 16px 32px;
+  padding: calc(16*100vw/var( --screen-width-desc)) calc(32*100vw/var( --screen-width-desc)) calc(16*100vw/var( --screen-width-desc)) calc(32*100vw/var( --screen-width-desc));
   border-radius: 100px;
   background-color: var(--gray-10);
-  margin-left: 48px;
+  margin-left: calc(48*100vw/var( --screen-width-desc));
 }
 
 header > nav {
   position: absolute;
   transform: translate(-50%, 0);
   left: 50%;
-  width: 418px;
+  width: calc(418*100vw/var(--screen-width-desc));
   display: flex;
   justify-content: space-between;
 }
 
 header > nav > p {
-  padding: 16px 32px 16px 32px;
-  border-radius: 100px;
-  border: 1px solid var(--gray-15);
+  padding: calc(16*100vw/var( --screen-width-desc)) calc(32*100vw/var( --screen-width-desc)) calc(16*100vw/var( --screen-width-desc)) calc(32*100vw/var( --screen-width-desc));
+  border-radius: calc(100*100vw/var(--screen-width-desc));
+  border: calc(1*100vw/var(--screen-width-desc)) solid var(--gray-15);
 }
 
 header > nav > p:hover {
@@ -62,8 +63,8 @@ header > nav > p:hover {
 }
 
 header > div {
-  width: 204px;
-  padding: 16px 32px 16px 32px;
+  width: calc(204*100vw/var(--screen-width-desc));
+  padding: calc(16*100vw/var( --screen-width-desc)) calc(32*100vw/var( --screen-width-desc)) calc(16*100vw/var( --screen-width-desc)) calc(32*100vw/var( --screen-width-desc));
   border-radius: 100px;
   display: flex;
   justify-content: space-between;
@@ -98,37 +99,37 @@ header > div > span {
 .connected_wallet > span {
   display: flex;
   align-items: center;
-  border-radius: 100px;
+  border-radius: calc(100*100vw/var(--screen-width-desc));
 }
 
 .connected_wallet > span:nth-of-type(1) {
   background-color: var(--gray-10);
-  padding: 16px 32px 16px 24px;
+  padding: calc(16*100vw/var( --screen-width-desc)) calc(32*100vw/var( --screen-width-desc)) calc(16*100vw/var( --screen-width-desc)) calc(24*100vw/var( --screen-width-desc));
 }
 
 .connected_wallet > span:nth-of-type(1) > img {
-  width: 24px;
-  height: 24px;
+  width: calc(24*100vw/var( --screen-width-desc));
+  height: calc(24*100vw/var( --screen-width-desc));
 }
 
 .connected_wallet > span:nth-of-type(1) > a {
-  margin-left: 8px;
+  margin-left: calc(8*100vw/var(--screen-width-desc));
 }
 
 .connected_wallet > span:nth-of-type(2) {
   background-color: inherit;
-  padding: 12px 32px 12px 24px;
-  margin-left: 16px;
-  border: 1px solid var(--gray-15);
+  padding: calc(12*100vw/var( --screen-width-desc)) calc(32*100vw/var( --screen-width-desc)) calc(12*100vw/var( --screen-width-desc)) calc(24*100vw/var( --screen-width-desc));
+  margin-left: calc(16*100vw/var( --screen-width-desc));
+  border: calc(1*100vw/var(--screen-width-desc)) solid var(--gray-15);
 }
 
 .connected_wallet > span:nth-of-type(2) > img {
-  width: 32px;
-  height: 32px;
+  width: calc(32*100vw/var( --screen-width-desc));
+  height: calc(32*100vw/var( --screen-width-desc));
 }
 
 .connected_wallet > span:nth-of-type(2) > a {
-  margin-left: 16px;
+  margin-left: calc(16*100vw/var( --screen-width-desc));
 }
 
 .connected_wallet > p,
@@ -137,32 +138,63 @@ header > div > span {
 }
 
 header > div > img {
-  width: 24px;
-  height: 24px;
+  width: calc(24*100vw/var( --screen-width-desc));
+  height: calc(24*100vw/var( --screen-width-desc));
 }
 
-@media screen and (max-width: 375px) {
-  header * {
-    font-size: 13px;
-  }
+header > p {
+  width: calc(217*100vw/var(--screen-width-desc));
+  height: calc(162*100vw/var(--screen-width-desc));
+  background-color: var(--gray-10);
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  position: absolute;
+  top: calc(92*100vw/var( --screen-width-desc));
+  right: calc(48*100vw/var( --screen-width-desc));
+}
+
+header > p > div {
+  width: 100%;
+  height: calc(54*100vw/var( --screen-width-desc));
+  padding: calc(17*100vw/var( --screen-width-desc)) 0 calc(17*100vw/var( --screen-width-desc)) calc(16*100vw/var( --screen-width-desc));
+  display: flex;
+}
+
+header > p > div:first-of-type,
+header > p > div:nth-of-type(2) {
+  border-bottom: calc(1*100vw/var(--screen-width-desc)) solid var(--gray-15);
+}
+
+header > p > div > img {
+  width: calc(20*100vw/var( --screen-width-desc));
+  height: calc(20*100vw/var( --screen-width-desc));
+}
+
+header > p > div > a {
+  font-weight: 500;
+  margin-left: calc(16*100vw/var( --screen-width-desc));
+}
+
+@media screen and (max-width: 700px) {
   header {
-    height: 50px;
-    padding: 0 16px 0 16px;
+    height: calc(50*100vw/var(--screen-width-desc));
+    padding: 0 calc(16*100vw/var(--screen-width-desc)) 0 calc(16*100vw/var(--screen-width-desc));
   }
 
   header:after {
-    top: 50px;
-    right: 16px;
-    left: 16px;
+    top: calc(50*100vw/var(--screen-width-desc));
+    right: calc(16*100vw/var(--screen-width-desc));
+    left: calc(16*100vw/var(--screen-width-desc));
   }
 
   header > span {
-    padding: 8px 12px 8px 12px;
+    padding: calc(8*100vw/var(--screen-width-desc)) calc(12*100vw/var(--screen-width-desc)) calc(8*100vw/var(--screen-width-desc)) calc(12*100vw/var(--screen-width-desc));
   }
 
   header > span > div {
-    width: 16px;
-    height: 12px;
+    width: calc(16*100vw/var(--screen-width-desc));
+    height: calc(12*100vw/var(--screen-width-desc));
     display: flex;
     align-items: center;
     border-bottom: 1px solid var(--white-100);
@@ -170,18 +202,18 @@ header > div > img {
   }
 
   header > span > img {
-    margin-left: 16px;
+    margin-left: calc(16*100vw/var(--screen-width-desc));
   }
 
   header > span > div > span {
-    width: 16px;
+    width: calc(16*100vw/var(--screen-width-desc));
     height: 0.5px;
     background-color: var(--white-100);
   }
 
   .burger_menu_active {
-    width: 16px;
-    height: 12px;
+    width: calc(16*100vw/var(--screen-width-desc));
+    height: calc(12*100vw/var(--screen-width-desc));
     display: flex;
     align-items: center;
     border-bottom: none;
@@ -205,8 +237,8 @@ header > div > img {
   }
 
   header > span > img {
-    width: 91px;
-    height: 20px;
+    width: calc(91*100vw/var(--screen-width-desc));
+    height: calc(20*100vw/var(--screen-width-desc));
   }
 
   header > span > p {
@@ -216,9 +248,9 @@ header > div > img {
   .transform_header > span > p {
     display: block;
     position: absolute;
-    padding: 8px 16px 8px 16px;
-    top: 248px;
-    left: 16px;
+    padding: calc(8*100vw/var(--screen-width-desc)) calc(16*100vw/var(--screen-width-desc)) calc(8*100vw/var(--screen-width-desc)) calc(16*100vw/var(--screen-width-desc));
+    top: calc(248*100vw/var(--screen-width-desc));
+    left: calc(16*100vw/var(--screen-width-desc));
     z-index: 3;
     margin: 0;
   }
@@ -229,21 +261,21 @@ header > div > img {
 
   .transform_header > nav {
     width: 100%;
-    height: 248px;
-    padding: 32px 0 82px 16px;
+    height: calc(248*100vw/var(--screen-width-desc));
+    padding: calc(32*100vw/var(--screen-width-desc)) 0 calc(82*100vw/var(--screen-width-desc)) calc(16*100vw/var(--screen-width-desc));
     display: flex;
     flex-direction: column;
     width: 100%;
     position: absolute;
     z-index: 2;
-    top: 50px;
+    top: calc(50*100vw/var(--screen-width-desc));
     background-color: var(--gray-10);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 calc(10*100vw/var(--screen-width-desc)) calc(20*100vw/var(--screen-width-desc)) rgba(0, 0, 0, 0.25);
   }
 
   header > nav > p {
     width: min-content;
-    padding: 8px 16px 8px 16px;
+    padding: calc(8*100vw/var(--screen-width-desc)) calc(16*100vw/var(--screen-width-desc)) calc(8*100vw/var(--screen-width-desc)) calc(16*100vw/var(--screen-width-desc));
     border-radius: 100px;
     border: 1px solid var(--gray-15);
     font-weight: 500;
@@ -254,8 +286,8 @@ header > div > img {
   }
 
   header > div {
-    width: 144px;
-    padding: 8px 16px 8px 16px;
+    width: calc(144*100vw/var(--screen-width-desc));
+    padding: calc(8*100vw/var(--screen-width-desc)) calc(16*100vw/var(--screen-width-desc)) calc(8*100vw/var(--screen-width-desc)) calc(16*100vw/var(--screen-width-desc));
     border-radius: 100px;
     display: flex;
     justify-content: space-between;
@@ -273,9 +305,9 @@ header > div > img {
   .transform_header > .connected_wallet > span:nth-of-type(1) {
     display: flex;
     position: absolute;
-    padding: 8px 16px 8px 16px;
+    padding: calc(8*100vw/var(--screen-width-desc)) calc(16*100vw/var(--screen-width-desc)) calc(8*100vw/var(--screen-width-desc)) calc(16*100vw/var(--screen-width-desc));
     margin: 0;
-    top: 82px;
+    top: calc(82*100vw/var(--screen-width-desc));
     background-color: var(--gray-10);
   }
 
@@ -284,17 +316,52 @@ header > div > img {
   }
 
   .connected_wallet > span:nth-of-type(2) {
-    padding: 8px 16px 8px 16px;
+    padding: calc(8*100vw/var(--screen-width-desc)) calc(16*100vw/var(--screen-width-desc)) calc(8*100vw/var(--screen-width-desc)) calc(16*100vw/var(--screen-width-desc));
     margin: 0;
   }
 
   .connected_wallet > span:nth-of-type(2) > img {
-    width: 20px;
-    height: 20px;
+    width: calc(20*100vw/var(--screen-width-desc));
+    height: calc(20*100vw/var(--screen-width-desc));
   }
 
   header > div > img {
-    width: 16px;
-    height: 16px;
+    width: calc(16*100vw/var(--screen-width-desc));
+    height: calc(16*100vw/var(--screen-width-desc));
+  }
+
+  header > p {
+    width: calc(180*100vw/var(--screen-width-desc));
+    height: calc(126*100vw/var(--screen-width-desc));
+    background-color: var(--gray-10);
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    position: absolute;
+    z-index: 3;
+    top: calc(58*100vw/var(--screen-width-desc));
+    right: calc(16*100vw/var(--screen-width-desc));
+  }
+
+  header > p > div {
+    width: 100%;
+    height: calc(42*100vw/var(--screen-width-desc));
+    padding: calc(12*100vw/var(--screen-width-desc)) 0 calc(12*100vw/var(--screen-width-desc)) calc(8*100vw/var(--screen-width-desc));
+    display: flex;
+  }
+
+  header > p > div:first-of-type,
+  header > p > div:nth-of-type(2) {
+    border-bottom: 1px solid var(--gray-15);
+  }
+
+  header > p > div > img {
+    width: calc(20*100vw/var(--screen-width-desc));
+    height: calc(20*100vw/var(--screen-width-desc));
+  }
+
+  header > p > div > a {
+    font-weight: 500;
+    margin-left: calc(16*100vw/var(--screen-width-desc));
   }
 }

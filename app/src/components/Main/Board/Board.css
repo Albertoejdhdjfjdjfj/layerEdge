@@ -1,6 +1,6 @@
 .board {
-  width: 960px;
-  margin-top: 64px;
+  width: calc(960 * 100vw/var(--screen-width-desc));
+  margin-top: calc(64 * 100vw/var(--screen-width-desc));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,12 +8,12 @@
 
 .board > .recent_joins {
   position: absolute;
-  left: 48px;
+  left: calc(48 * 100vw/var(--screen-width-desc));
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
   .board {
-    width: 343px;
+    width: calc(343 * 100vw/var(--screen-width-desc));
   }
 
   .board > .recent_joins {

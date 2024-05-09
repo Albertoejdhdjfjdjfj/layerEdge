@@ -1,17 +1,17 @@
 .user {
   width: 100%;
-  height: 78px;
-  border-bottom: 1px solid rgba(197, 167, 212, 0.15);
+  height: calc(78 * 100vw/var(--screen-width-desc));
+  border-bottom: calc(1 * 100vw/var(--screen-width-desc)) solid rgba(197, 167, 212, 0.15);
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 .user > span {
-  padding: 0px 8px 0px 8px;
-  min-width: 32px;
-  height: 32px;
-  border-radius: 99px;
+  padding: calc(0 * 100vw/var(--screen-width-desc)) calc(8 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(8 * 100vw/var(--screen-width-desc));
+  min-width: calc(32 * 100vw/var(--screen-width-desc));
+  height: calc(32 * 100vw/var(--screen-width-desc));
+  border-radius: calc(99 * 100vw/var(--screen-width-desc));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +36,7 @@
 
 .user > div {
   position: absolute;
-  margin-left: 158px;
+  margin-left: calc(158 * 100vw/var(--screen-width-desc));
   display: flex;
   align-items: center;
 }
@@ -57,18 +57,18 @@
 }
 
 .user > div > img {
-  width: 32px;
-  height: 32px;
+  width: calc(32 * 100vw/var(--screen-width-desc));
+  height: calc(32 * 100vw/var(--screen-width-desc));
 }
 
 .user > div > a {
-  margin-left: 16px;
+  margin-left: calc(16 * 100vw/var(--screen-width-desc));
   font-weight: 500;
 }
 
 .user > a {
   position: absolute;
-  margin-left: 461px;
+  margin-left: calc(461 * 100vw/var(--screen-width-desc));
   font-weight: 500;
 }
 
@@ -78,9 +78,9 @@
 
 .user > p {
   margin-left: auto;
-  height: 46px;
-  padding: 12px 24px 12px 24px;
-  border-radius: 100px;
+  height: calc(46 * 100vw/var(--screen-width-desc));
+  padding: calc(12 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc)) calc(12 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc));
+  border-radius: calc(100 * 100vw/var(--screen-width-desc));
   background-color: rgba(133, 117, 142, 0.1);
   display: flex;
   align-items: center;
@@ -93,83 +93,83 @@
 
 .user > p:hover ~ div:nth-of-type(2) {
   display: flex;
-  width: 254px;
-  height: 76px;
-  padding: 12px 16px 12px 16px;
-  border-radius: 16px;
+  width: calc(254 * 100vw/var(--screen-width-desc));
+  height: calc(76 * 100vw/var(--screen-width-desc));
+  padding: calc(12 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(12 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc));
+  border-radius: calc(16 * 100vw/var(--screen-width-desc));
   background-color: var(--gray-15);
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   position: absolute;
-  margin-left: 976px;
-  margin-top: 30px;
+  margin-left: calc(976 * 100vw/var(--screen-width-desc));
+  margin-top: calc(30 * 100vw/var(--screen-width-desc));
 }
 
 .user > p > img {
-  width: 20px;
-  height: 20px;
+  width: calc(20 * 100vw/var(--screen-width-desc));
+  height: calc(20 * 100vw/var(--screen-width-desc));
 }
 
 .user > p > a {
-  margin-left: 8px;
+  margin-left: calc(8 * 100vw/var(--screen-width-desc));
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
   .user {
     width: 100%;
-    height: 118px;
-    border-bottom: 1px solid rgba(197, 167, 212, 0.15);
+    height: calc(118 * 100vw/var(--screen-width-desc));
+    border-bottom: calc(1 * 100vw/var(--screen-width-desc)) solid rgba(197, 167, 212, 0.15);
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
   }
 
   .user > span {
-    min-width: 24px;
-    height: 24px;
+    min-width: calc(24 * 100vw/var(--screen-width-desc));
+    height: calc(24 * 100vw/var(--screen-width-desc));
     position: absolute;
-    margin-bottom: 78px;
+    margin-bottom: calc(78 * 100vw/var(--screen-width-desc));
   }
 
   .user > div {
     margin-left: 0;
-    margin-bottom: 24px;
+    margin-bottom: calc(24 * 100vw/var(--screen-width-desc));
     display: flex;
     align-items: center;
   }
 
   .user > div > img {
-    width: 24px;
-    height: 24px;
+    width: calc(24 * 100vw/var(--screen-width-desc));
+    height: calc(24 * 100vw/var(--screen-width-desc));
   }
 
   .user > div > a {
-    margin-left: 8px;
+    margin-left: calc(8 * 100vw/var(--screen-width-desc));
   }
 
   .user > a {
     position: absolute;
-    margin-left: 180px;
-    margin-bottom: 16px;
+    margin-left: calc(180 * 100vw/var(--screen-width-desc));
+    margin-bottom: calc(16 * 100vw/var(--screen-width-desc));
   }
 
   .user > a > p {
     display: block;
-    font-size: 11px;
+    font-size: calc(11 * 100vw/var(--screen-width-desc));
     color: var(--gray-100);
   }
 
   .user > p {
     width: max-content;
-    height: 34px;
-    padding: 8px 16px 8px 16px;
-    border-radius: 100px;
+    height: calc(34 * 100vw/var(--screen-width-desc));
+    padding: calc(8 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(8 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc));
+    border-radius: calc(100 * 100vw/var(--screen-width-desc));
     background-color: rgba(133, 117, 142, 0.1);
     display: flex;
     position: absolute;
-    margin-left: 180px;
-    margin-bottom: 68px;
+    margin-left: calc(180 * 100vw/var(--screen-width-desc));
+    margin-bottom: calc(68 * 100vw/var(--screen-width-desc));
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
@@ -180,7 +180,7 @@
   }
 
   .user > p > img {
-    width: 16px;
-    height: 16px;
+    width: calc(16 * 100vw/var(--screen-width-desc));
+    height: calc(16 * 100vw/var(--screen-width-desc));
   }
 }

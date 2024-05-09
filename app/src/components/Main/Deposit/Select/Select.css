@@ -1,10 +1,10 @@
 .select {
-  height: 46px;
-  padding: 0px 24px 0px 24px;
+  height: calc(46 * 100vw/var(--screen-width-desc));
+  padding: calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc));
   display: flex;
   align-items: center;
-  border-radius: 100px;
-  border: 1px solid var(--gray-15);
+  border-radius: calc(100 * 100vw/var(--screen-width-desc));
+  border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-15);
   font-weight: 500;
 }
 
@@ -13,44 +13,27 @@
 }
 
 .select > img:first-child {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
+  width: calc(20 * 100vw/var(--screen-width-desc));
+  height: calc(20 * 100vw/var(--screen-width-desc));
+  margin-right: calc(8 * 100vw/var(--screen-width-desc));
 }
 
 .select > img:last-child {
-  margin-left: 8px;
+  margin-left: calc(8 * 100vw/var(--screen-width-desc));
 }
 
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 700px) {
   .select {
-    height: calc(34 * 100vw / 375);
-    padding: calc(0 * 100vw / 375) calc(12 * 100vw / 375) calc(0 * 100vw / 375)
-      calc(12 * 100vw / 375);
+    height: calc(34 * 100vw/var(--screen-width-desc));
+    padding: calc(0 * 100vw/var(--screen-width-desc)) calc(12 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(12 * 100vw/var(--screen-width-desc));
   }
 
   .select > img:first-child {
-    width: calc(16 * 100vw / 375);
-    height: calc(16 * 100vw / 375);
+    width: calc(16 * 100vw/var(--screen-width-desc));
+    height: calc(16 * 100vw/var(--screen-width-desc));
   }
 
   .select > img:last-child {
-    margin-left: calc(8 * 100vw / 375);
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .select {
-    height: 34px;
-    padding: 0px 12px 0px 12px;
-  }
-
-  .select > img:first-child {
-    width: 16px;
-    height: 16px;
-  }
-
-  .select > img:last-child {
-    margin-left: 8px;
+    margin-left: calc(8 * 100vw/var(--screen-width-desc));
   }
 }

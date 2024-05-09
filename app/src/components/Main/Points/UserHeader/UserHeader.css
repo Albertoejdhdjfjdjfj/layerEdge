@@ -6,19 +6,19 @@
 }
 
 .user_header > span {
-  width: 359px;
+  width: calc(359 * 100vw/var(--screen-width-desc));
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .user_header > span > img {
-  width: 100px;
-  height: 100px;
+  width: calc(100 * 100vw/var(--screen-width-desc));
+  height: calc(100 * 100vw/var(--screen-width-desc));
 }
 
 .user_header div {
-  height: 75px;
+  height: calc(75 * 100vw/var(--screen-width-desc));
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -26,39 +26,39 @@
 }
 
 .user_header div > p {
-  font-size: 32px;
+  font-size: calc(32 * 100vw/var(--screen-width-desc));
 }
 
 .user_header div > a {
   font-weight: 500;
-  font-size: 16px;
+  font-size: calc(16 * 100vw/var(--screen-width-desc));
   color: var(--gray-100);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
   .user_header {
     flex-wrap: wrap;
   }
 
   .user_header > span {
-    width: 250px;
-    margin-bottom: 36px;
+    width: calc(250 * 100vw/var(--screen-width-desc));
+    margin-bottom: calc(36 * 100vw/var(--screen-width-desc));
   }
 
   .user_header > span > img {
-    width: 64px;
-    height: 64px;
+    width: calc(64 * 100vw/var(--screen-width-desc));
+    height: calc(64 * 100vw/var(--screen-width-desc));
   }
 
   .user_header div {
-    height: 60px;
+    height: calc(60 * 100vw/var(--screen-width-desc));
   }
 
   .user_header div > p {
-    font-size: 24px;
+    font-size: calc(24 * 100vw/var(--screen-width-desc));
   }
 
   .user_header div > a {
-    font-size: 13px;
+    font-size: calc(13 * 100vw/var(--screen-width-desc));
   }
 }

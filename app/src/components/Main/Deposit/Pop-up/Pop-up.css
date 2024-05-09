@@ -5,7 +5,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(18, 15, 20, 0.8);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(calc(6 * 100vw/var(--screen-width-desc)));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,12 +13,12 @@
 
 .pop_up {
   position: fixed;
-  width: 540px;
-  height: 227px;
-  border-radius: 32px;
-  border: 1px solid var(--white-5);
+  width: calc(540 * 100vw/var(--screen-width-desc));
+  height: calc(227 * 100vw/var(--screen-width-desc));
+  border-radius: calc(32 * 100vw/var(--screen-width-desc));
+  border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--white-5);
   background-color: #1c1a20;
-  padding: 32px;
+  padding: calc(32 * 100vw/var(--screen-width-desc));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,10 +29,10 @@
   content: '';
   position: absolute;
   top: 0;
-  left: 12px;
+  left: calc(12 * 100vw/var(--screen-width-desc));
   right: 12;
-  height: 1px;
-  width: 510px;
+  height: calc(1 * 100vw/var(--screen-width-desc));
+  width: calc(510 * 100vw/var(--screen-width-desc));
   background-image: linear-gradient(
     to left,
     rgba(255, 255, 255, 0),
@@ -49,21 +49,21 @@
 }
 .pop_up > div > h2 {
   display: inline;
-  font-size: 32px;
+  font-size: calc(32 * 100vw/var(--screen-width-desc));
 }
 
 .pop_up > div > a {
-  margin-top: 8px;
+  margin-top: calc(8 * 100vw/var(--screen-width-desc));
   font-weight: 500;
 }
 
 .pop_up > p {
-  width: 126px;
-  height: 56px;
-  margin-top: 32px;
-  border-radius: 100px;
+  width: calc(126 * 100vw/var(--screen-width-desc));
+  height: calc(56 * 100vw/var(--screen-width-desc));
+  margin-top: calc(32 * 100vw/var(--screen-width-desc));
+  border-radius: calc(100 * 100vw/var(--screen-width-desc));
   background-color: var(--white-100);
-  margin-top: 8px;
+  margin-top: calc(8 * 100vw/var(--screen-width-desc));
   font-weight: 500;
   color: var(--black-100);
   display: flex;
@@ -75,72 +75,38 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 555px) {
+
+@media screen and (max-width: 700px) {
   .pop_up_wrapper {
     width: 100vw;
   }
 
   .pop_up {
     position: relative;
-    width: calc(343 * 100vw / 375);
-    height: calc(166 * 100vw / 375);
-    border-radius: calc(32 * 100vw / 375);
-    padding: calc(20 * 100vw / 375);
+    width: calc(343 * 100vw/var(--screen-width-desc));
+    height: calc(166 * 100vw/var(--screen-width-desc));
+    border-radius: calc(32 * 100vw/var(--screen-width-desc));
+    padding: calc(20 * 100vw/var(--screen-width-desc));
   }
 
   .pop_up::before {
     content: '';
     position: absolute;
-    width: calc(310 * 100vw / 375);
+    width: calc(310 * 100vw/var(--screen-width-desc));
   }
 
   .pop_up > div > h2 {
-    font-size: calc(24 * 100vw / 375);
+    font-size: calc(24 * 100vw/var(--screen-width-desc));
   }
 
   .pop_up > div > a {
-    font-size: calc(13 * 100vw / 375);
+    font-size: calc(13 * 100vw/var(--screen-width-desc));
   }
 
   .pop_up > p {
-    width: calc(82 * 100vw / 375);
-    height: calc(34 * 100vw / 375);
-    margin-top: calc(32 * 100vw / 375);
-    font-size: calc(13 * 100vw / 375);
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .pop_up_wrapper {
-    width: 100vw;
-  }
-
-  .pop_up {
-    position: relative;
-    width: 343px;
-    height: 166px;
-    border-radius: 32px;
-    padding: 20px;
-  }
-
-  .pop_up::before {
-    content: '';
-    position: absolute;
-    width: 310px;
-  }
-
-  .pop_up > div > h2 {
-    font-size: 24px;
-  }
-
-  .pop_up > div > a {
-    font-size: 13px;
-  }
-
-  .pop_up > p {
-    width: 82px;
-    height: 34px;
-    margin-top: 32px;
-    font-size: 13px;
+    width: calc(82 * 100vw/var(--screen-width-desc));
+    height: calc(34 * 100vw/var(--screen-width-desc));
+    margin-top: calc(32 * 100vw/var(--screen-width-desc));
+    font-size: calc(13 * 100vw/var(--screen-width-desc));
   }
 }

@@ -1,5 +1,5 @@
 .milestones {
-  margin-top: 80px;
+  margin-top: calc(80 * 100vw/var(--screen-width-desc));
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,14 +13,14 @@
 }
 
 .milestones > span > div {
-  height: 75px;
+  height: calc(75 * 100vw/var(--screen-width-desc));
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .milestones > span > div > p {
-  font-size: 32px;
+  font-size: calc(32 * 100vw/var(--screen-width-desc));
 }
 
 .milestones > span > div > a {
@@ -30,14 +30,14 @@
 
 .milestones > div {
   position: absolute;
-  margin-top: 123px;
-  width: 988px;
+  margin-top: calc(123 * 100vw/var(--screen-width-desc));
+  width: calc(988 * 100vw/var(--screen-width-desc));
   display: flex;
   justify-content: space-between;
 }
 
 .milestones > div > p {
-  height: 117px;
+  height: calc(117 * 100vw/var(--screen-width-desc));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,9 +46,9 @@
 
 .milestones > div > p > p {
   font-weight: 500;
-  padding: 6px 12px 6px 12px;
-  border-radius: 99px;
-  border: 1px solid var(--gray-100);
+  padding: calc(6 * 100vw/var(--screen-width-desc)) calc(12 * 100vw/var(--screen-width-desc)) calc(6 * 100vw/var(--screen-width-desc)) calc(12 * 100vw/var(--screen-width-desc));
+  border-radius: calc(99 * 100vw/var(--screen-width-desc));
+  border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-100);
 }
 
 .milestones > div > p:nth-of-type(2) > p {
@@ -63,25 +63,25 @@
 }
 
 .milestones > div > p > span > img {
-  width: 18px;
-  height: 18px;
+  width: calc(18 * 100vw/var(--screen-width-desc));
+  height: calc(18 * 100vw/var(--screen-width-desc));
 }
 
 .milestones > div > p > span > a {
-  margin-left: 8px;
+  margin-left: calc(8 * 100vw/var(--screen-width-desc));
 
   font-weight: 500;
   color: var(--gray-100);
 }
 
 .milestones > div > p > div {
-  width: 32px;
-  height: 32px;
+  width: calc(32 * 100vw/var(--screen-width-desc));
+  height: calc(32 * 100vw/var(--screen-width-desc));
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--gray-100);
-  border-radius: 99px;
+  border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-100);
+  border-radius: calc(99 * 100vw/var(--screen-width-desc));
   background-color: var(--black-100);
 
   font-weight: 500;
@@ -96,35 +96,35 @@
   position: absolute;
   z-index: -1;
   top: 44%;
-  left: 15px;
+  left: calc(15 * 100vw/var(--screen-width-desc));
   transform: translateY(-50%);
-  border-radius: 100px;
-  height: 3px;
-  width: 945px;
+  border-radius: calc(100 * 100vw/var(--screen-width-desc));
+  height: calc(3 * 100vw/var(--screen-width-desc));
+  width: calc(945 * 100vw/var(--screen-width-desc));
   background-color: var(--gray-100);
 }
 
 .milestones > div > div > div {
-  width: 167px;
-  height: 3px;
-  border-radius: 100px;
+  width: calc(167 * 100vw/var(--screen-width-desc));
+  height: calc(3 * 100vw/var(--screen-width-desc));
+  border-radius: calc(100 * 100vw/var(--screen-width-desc));
   background-color: var(--white-100);
 }
 
 .milestones > p {
   width: max-content;
-  margin-top: 213px;
-  padding: 17px 32px 17px 32px;
-  border-radius: 100px;
+  margin-top: calc(213 * 100vw/var(--screen-width-desc));
+  padding: calc(17 * 100vw/var(--screen-width-desc)) calc(32 * 100vw/var(--screen-width-desc)) calc(17 * 100vw/var(--screen-width-desc)) calc(32 * 100vw/var(--screen-width-desc));
+  border-radius: calc(100 * 100vw/var(--screen-width-desc));
   background-color: var(--white-100);
 
   font-weight: 500;
   color: var(--black-100);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
   .milestones {
-    margin-top: 64px;
+    margin-top: calc(64 * 100vw/var(--screen-width-desc));
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -138,14 +138,14 @@
   }
 
   .milestones > span > div {
-    height: 75px;
+    height: calc(75 * 100vw/var(--screen-width-desc));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   .milestones > span > div > p {
-    font-size: 34px;
+    font-size: calc(34 * 100vw/var(--screen-width-desc));
   }
 
   .milestones > span > div > a {
@@ -155,9 +155,9 @@
 
   .milestones > div {
     position: absolute;
-    margin-top: 108px;
-    width: 343px;
-    height: 423px;
+    margin-top: calc(108 * 100vw/var(--screen-width-desc));
+    width: calc(343 * 100vw/var(--screen-width-desc));
+    height: calc(423 * 100vw/var(--screen-width-desc));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,7 +166,7 @@
 
   .milestones > div > p {
     width: 100%;
-    height: 29px;
+    height: calc(29 * 100vw/var(--screen-width-desc));
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -174,12 +174,12 @@
   }
 
   .milestones > div > p > p {
-    left: 202px;
+    left: calc(202 * 100vw/var(--screen-width-desc));
     font-weight: 500;
     position: absolute;
-    padding: 6px 12px 6px 12px;
-    border-radius: 99px;
-    border: 1px solid var(--gray-100);
+    padding: calc(6 * 100vw/var(--screen-width-desc)) calc(12 * 100vw/var(--screen-width-desc)) calc(6 * 100vw/var(--screen-width-desc)) calc(12 * 100vw/var(--screen-width-desc));
+    border-radius: calc(99 * 100vw/var(--screen-width-desc));
+    border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-100);
   }
 
   .milestones > div > p:nth-of-type(2) > p {
@@ -189,32 +189,32 @@
 
   .milestones > div > p > span {
     position: absolute;
-    right: 201px;
+    right: calc(201 * 100vw/var(--screen-width-desc));
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .milestones > div > p > span > img {
-    width: 18px;
-    height: 18px;
+    width: calc(18 * 100vw/var(--screen-width-desc));
+    height: calc(18 * 100vw/var(--screen-width-desc));
   }
 
   .milestones > div > p > span > a {
-    margin-left: 8px;
-    font-size: 16px;
+    margin-left: calc(8 * 100vw/var(--screen-width-desc));
+    font-size: calc(16 * 100vw/var(--screen-width-desc));
     font-weight: 500;
     color: var(--gray-100);
   }
 
   .milestones > div > p > div {
-    width: 20px;
-    height: 20px;
+    width: calc(20 * 100vw/var(--screen-width-desc));
+    height: calc(20 * 100vw/var(--screen-width-desc));
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--gray-100);
-    border-radius: 99px;
+    border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-100);
+    border-radius: calc(99 * 100vw/var(--screen-width-desc));
     background-color: var(--black-100);
 
     font-weight: 500;
@@ -228,26 +228,26 @@
   .milestones > div > div {
     position: absolute;
     z-index: -1;
-    top: 230px;
-    left: 171px;
-    border-radius: 100px;
-    width: 3px;
-    height: 370px;
+    top: calc(230 * 100vw/var(--screen-width-desc));
+    left: calc(171 * 100vw/var(--screen-width-desc));
+    border-radius: calc(100 * 100vw/var(--screen-width-desc));
+    width: calc(3 * 100vw/var(--screen-width-desc));
+    height: calc(370 * 100vw/var(--screen-width-desc));
     background-color: var(--gray-100);
   }
 
   .milestones > div > div > div {
-    width: 2px;
-    height: 50px;
-    border-radius: 100px;
+    width: calc(2 * 100vw/var(--screen-width-desc));
+    height: calc(50 * 100vw/var(--screen-width-desc));
+    border-radius: calc(100 * 100vw/var(--screen-width-desc));
     background-color: var(--white-100);
   }
 
   .milestones > p {
     width: max-content;
-    margin-top: 519px;
-    padding: 8px 16px 8px 16px;
-    border-radius: 100px;
+    margin-top: calc(519 * 100vw/var(--screen-width-desc));
+    padding: calc(8 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(8 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc));
+    border-radius: calc(100 * 100vw/var(--screen-width-desc));
     background-color: var(--white-100);
     font-weight: 500;
     color: var(--black-100);

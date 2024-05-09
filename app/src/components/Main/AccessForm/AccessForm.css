@@ -1,12 +1,13 @@
 .access_form {
   position: relative;
-  width: 640px;
-  margin-top: 215px;
-  margin-bottom: 258px;
-  border-radius: 32px;
+  width: 100%; /* Изменили ширину на 100% */
+  max-width: calc(640*100vw/var( --screen-width-desc)); /* Добавили максимальную ширину */
+  margin-top: calc(215*100vw/var( --screen-width-desc));
+  margin-bottom: calc(258*100vw/var( --screen-width-desc));
+  border-radius: calc(32 * 100vw/var( --screen-width-desc));
   border: 1px solid var(--white-5);
   background-color: var(--white-5);
-  padding: 32px;
+  padding: calc(32*100vw/var( --screen-width-desc));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,11 +15,13 @@
 }
 
 .access_form::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
+  left: 50%; /* Добавили смещение влево на 50% */
+  transform: translateX(-50%); /* Добавили смещение назад на 50% ширины */
   height: 1px;
-  width: 610px;
+  width: calc(100% - 60px); /* Изменили ширину на 100% минус 60px (32px паддинг слева и справа) */
   background-image: linear-gradient(
     to left,
     rgba(255, 255, 255, 0),
@@ -28,43 +31,27 @@
     rgba(137, 20, 229, 0)
   );
 }
+
 .access_form > h2 {
-  margin-bottom: 32px;
-  font-size: 24px;
+  margin-bottom: calc(32*100vw/var( --screen-width-desc));
+  font-size: calc(24*100vw/var( --screen-width-desc));
 }
 
-@media screen and (max-width: 555px) {
+
+@media screen and (max-width: 700px) {
   .access_form {
-    width: calc(343 * 100vw / 375);
-    min-height: calc(318 * 100vw / 375);
-    margin-top: calc(77 * 100vw / 375);
-    padding: calc(20 * 100vw / 375);
-    margin-bottom: calc(46 * 100vw / 375);
+    width: calc(343*100vw/var(--screen-width-desc));
+    min-height: calc(318*100vw/var(--screen-width-desc));
+    margin-top: calc(77*100vw/var(--screen-width-desc));
+    padding: calc(20*100vw/var(--screen-width-desc));
+    margin-bottom: calc(46*100vw/var(--screen-width-desc));
   }
 
   .access_form::before {
-    width: calc(311 * 100vw / 375);
+    width: calc(311*100vw/var(--screen-width-desc));
   }
   .access_form > h2 {
-    margin-bottom: calc(20 * 100vw / 375);
-    font-size: calc(24 * 100vw / 375);
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .access_form {
-    width: 343px;
-    min-height: 318px;
-    margin-top: 77px;
-    padding: 20px;
-    margin-bottom: 46px;
-  }
-
-  .access_form::before {
-    width: 311px;
-  }
-  .access_form > h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
+    margin-bottom: calc(20*100vw/var(--screen-width-desc));
+    font-size: calc(24*100vw/var(--screen-width-desc));
   }
 }

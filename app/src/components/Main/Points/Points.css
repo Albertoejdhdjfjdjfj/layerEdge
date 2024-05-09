@@ -1,14 +1,14 @@
 .points {
-  width: 960px;
-  margin-top: 64px;
-  margin-bottom: 154px;
+  width: calc(960 * 100vw/var(--screen-width-desc));
+  margin-top: calc(64 * 100vw/var(--screen-width-desc));
+  margin-bottom: calc(154 * 100vw/var(--screen-width-desc));
   display: flex;
   flex-direction: column;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
   .points {
-    width: 343px;
-    margin-bottom: 32px;
+    width: calc(343 * 100vw/var(--screen-width-desc));
+    margin-bottom: calc(32 * 100vw/var(--screen-width-desc));
   }
 }
