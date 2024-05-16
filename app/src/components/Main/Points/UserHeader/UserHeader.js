@@ -1,6 +1,6 @@
 import React from 'react';
 import './UserHeader.css';
-import Avatar from '../../../../assets/images/Avatar.svg';
+import Avatar from '../../../../assets/images/general/Avatar.svg';
 
 const UserHeader = () => {
   return (

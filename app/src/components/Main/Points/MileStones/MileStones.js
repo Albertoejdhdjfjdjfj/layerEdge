@@ -1,5 +1,5 @@
 import React from 'react';
-import BitCoinLogo from '../../../../assets/images/BitCoinLogo2.svg';
+import BitCoinLogo from '../../../../assets/images/networks/BitCoin.svg';
 import './MileStones.css';
 
 const MileStones = () => {

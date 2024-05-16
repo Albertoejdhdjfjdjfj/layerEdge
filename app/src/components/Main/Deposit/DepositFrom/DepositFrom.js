@@ -1,7 +1,7 @@
 import React from 'react';
 import Select from '../Select/Select';
-import Ethereum from '../../../../assets/images/EthereumLogo.svg';
-import BitCoin from '../../../../assets/images/BitCoinLogo.svg';
+import Ethereum from '../../../../assets/images/networks/Ethereum.svg';
+import BitCoin from '../../../../assets/images/networks/BitCoin.svg';
 import './DepositFrom.css';
 
 const DepositFrom = () => {

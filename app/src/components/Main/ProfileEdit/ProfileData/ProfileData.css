@@ -1,49 +1,49 @@
 .profile_data {
-  margin-top: calc(64 * 100vw/var(--screen-width-desc));
-  margin-left: calc(48 * 100vw/var(--screen-width-desc));
+  margin-top: calc(64 * 100vw / var(--screen-width-desc));
+  margin-left: calc(48 * 100vw / var(--screen-width-desc));
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .profile_data > p:first-of-type {
-  font-size: calc(32 * 100vw/var(--screen-width-desc));
+  font-size: calc(32 * 100vw / var(--screen-width-desc));
 }
 
 .profile_data > a {
-  margin-top: calc(48 * 100vw/var(--screen-width-desc));
+  margin-top: calc(48 * 100vw / var(--screen-width-desc));
   color: var(--gray-100);
 }
 
 .profile_data > img {
-  margin-top: calc(16 * 100vw/var(--screen-width-desc));
-  width: calc(100 * 100vw/var(--screen-width-desc));
-  height: calc(100 * 100vw/var(--screen-width-desc));
+  margin-top: calc(16 * 100vw / var(--screen-width-desc));
+  width: calc(100 * 100vw / var(--screen-width-desc));
+  height: calc(100 * 100vw / var(--screen-width-desc));
 }
 
 .profile_data > p {
-  margin-top: calc(16 * 100vw/var(--screen-width-desc));
+  margin-top: calc(16 * 100vw / var(--screen-width-desc));
   display: flex;
 }
 
 .profile_data > p > div {
-  width: calc(16 * 100vw/var(--screen-width-desc));
-  height: calc(16 * 100vw/var(--screen-width-desc));
-  border-radius: calc(4 * 100vw/var(--screen-width-desc));
-  border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-15);
+  width: calc(16 * 100vw / var(--screen-width-desc));
+  height: calc(16 * 100vw / var(--screen-width-desc));
+  border-radius: calc(4 * 100vw / var(--screen-width-desc));
+  border: calc(1 * 100vw / var(--screen-width-desc)) solid var(--gray-15);
   color: var(--gray-15);
 }
 
 .profile_data > p > a {
-  font-size: calc(12 * 100vw/var(--screen-width-desc));
+  font-size: calc(12 * 100vw / var(--screen-width-desc));
   font-weight: 500;
-  margin-left: calc(8 * 100vw/var(--screen-width-desc));
+  margin-left: calc(8 * 100vw / var(--screen-width-desc));
 }
 
 .profile_data > span {
-  width: calc(360 * 100vw/var(--screen-width-desc));
-  height: calc(84 * 100vw/var(--screen-width-desc));
-  margin-top: calc(48 * 100vw/var(--screen-width-desc));
+  width: calc(360 * 100vw / var(--screen-width-desc));
+  height: calc(84 * 100vw / var(--screen-width-desc));
+  margin-top: calc(48 * 100vw / var(--screen-width-desc));
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -57,13 +57,14 @@
 
 .profile_data > span > p {
   width: 100%;
-  border-radius: calc(100 * 100vw/var(--screen-width-desc));
-  padding: calc(12 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc)) calc(12 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc));
+  border-radius: calc(100 * 100vw / var(--screen-width-desc));
+  padding: calc(12 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc))
+    calc(12 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc));
   display: flex;
 }
 
 .profile_data > span:first-of-type > p {
-  border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-15);
+  border: calc(1 * 100vw / var(--screen-width-desc)) solid var(--gray-15);
   justify-content: flex-start;
 }
 
@@ -77,51 +78,51 @@
 @media screen and (max-width: 700px) {
   .profile_data {
     width: 100%;
-    margin-top: calc(32 * 100vw/var(--screen-width-desc));
-    margin-left: calc(0 * 100vw/var(--screen-width-desc));
+    margin-top: calc(32 * 100vw / var(--screen-width-desc));
+    margin-left: calc(0 * 100vw / var(--screen-width-desc));
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
   .profile_data > p:first-of-type {
-    font-size: calc(24 * 100vw/var(--screen-width-desc));
+    font-size: calc(24 * 100vw / var(--screen-width-desc));
   }
 
   .profile_data > a {
-    margin-top: calc(32 * 100vw/var(--screen-width-desc));
+    margin-top: calc(32 * 100vw / var(--screen-width-desc));
     color: var(--gray-100);
   }
 
   .profile_data > img {
-    margin-top: calc(16 * 100vw/var(--screen-width-desc));
-    width: calc(64 * 100vw/var(--screen-width-desc));
-    height: calc(64 * 100vw/var(--screen-width-desc));
+    margin-top: calc(16 * 100vw / var(--screen-width-desc));
+    width: calc(64 * 100vw / var(--screen-width-desc));
+    height: calc(64 * 100vw / var(--screen-width-desc));
   }
 
   .profile_data > p {
-    margin-top: calc(16 * 100vw/var(--screen-width-desc));
+    margin-top: calc(16 * 100vw / var(--screen-width-desc));
     display: flex;
   }
 
   .profile_data > p > div {
-    width: calc(16 * 100vw/var(--screen-width-desc));
-    height: calc(16 * 100vw/var(--screen-width-desc));
-    border-radius: calc(4 * 100vw/var(--screen-width-desc));
-    border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-15);
+    width: calc(16 * 100vw / var(--screen-width-desc));
+    height: calc(16 * 100vw / var(--screen-width-desc));
+    border-radius: calc(4 * 100vw / var(--screen-width-desc));
+    border: calc(1 * 100vw / var(--screen-width-desc)) solid var(--gray-15);
     color: var(--gray-15);
   }
 
   .profile_data > p > a {
-    font-size: calc(11 * 100vw/var(--screen-width-desc));
+    font-size: calc(11 * 100vw / var(--screen-width-desc));
     font-weight: 500;
-    margin-left: calc(8 * 100vw/var(--screen-width-desc));
+    margin-left: calc(8 * 100vw / var(--screen-width-desc));
   }
 
   .profile_data > span {
     width: 100%;
-    height: calc(60 * 100vw/var(--screen-width-desc));
-    margin-top: calc(32 * 100vw/var(--screen-width-desc));
+    height: calc(60 * 100vw / var(--screen-width-desc));
+    margin-top: calc(32 * 100vw / var(--screen-width-desc));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -135,13 +136,14 @@
 
   .profile_data > span > p {
     width: 100%;
-    border-radius: calc(100 * 100vw/var(--screen-width-desc));
-    padding: calc(8 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(8 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc));
+    border-radius: calc(100 * 100vw / var(--screen-width-desc));
+    padding: calc(8 * 100vw / var(--screen-width-desc)) calc(16 * 100vw / var(--screen-width-desc))
+      calc(8 * 100vw / var(--screen-width-desc)) calc(16 * 100vw / var(--screen-width-desc));
     display: flex;
   }
 
   .profile_data > span:first-of-type > p {
-    border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-15);
+    border: calc(1 * 100vw / var(--screen-width-desc)) solid var(--gray-15);
     justify-content: flex-start;
   }
 

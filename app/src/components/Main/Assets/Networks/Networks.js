@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
-import { data } from './assets/network_data';
+import { useSelector, useDispatch } from 'react-redux';
+import { set_network } from '../../../../redux/actions/components_control/actions';
+import { data } from './data/network_data';
 import { useBool } from '../../../../assets/functions/hooks/customHooks';
-import Arrow from '../../../../assets/images/Arrow.svg';
-import BlackArrow from '../../../../assets/images/BlackArrow.svg';
+import Arrow from '../../../../assets/images/general/Arrow.svg';
+import BlackArrow from '../../../../assets/images/general/BlackArrow.svg';
 import './Networks.css';
 
 const Networks = () => {
-  const [selectedNetwork, selectNetwork] = useState(data[0]);
+  const selectedNetwork = useSelector((state) => state.componentsControlReducer.network);
+  const [currentNetwork, changeNetwork] = useState(data[0]);
   const [stateSelect, changeStateSelect] = useBool(true);
+  const dispatch = useDispatch();
+
   return (
     <div className="networks">
       <a>1.Choose a network</a>
@@ -16,29 +21,28 @@ const Networks = () => {
         onClick={() => changeStateSelect()}
       >
         <div>
-          <img src={selectedNetwork.path} />
-          <p>{selectedNetwork.name}</p>
-          <a>{selectedNetwork.quantity}</a>
+          <img src={currentNetwork?.path} />
+          <p>{currentNetwork?.name}</p>
+          <a>{currentNetwork?.quantity}</a>
         </div>
         {stateSelect ? <img src={BlackArrow} /> : <img src={Arrow} />}
       </div>
       {stateSelect && (
         <span>
-          {data.map((el, index) => (
+          {data.map((el) => (
             <div
-              className={selectedNetwork.name == data[index].name ? 'selected_network' : ''}
-              onClick={() => selectNetwork(data[index])}
+              className={selectedNetwork?.name == el.name ? 'selected_network' : ''}
+              onClick={() => {
+                dispatch(set_network(el));
+                changeNetwork(el);
+              }}
             >
               <div>
-                <img src={el.path} />
-                <p>{el.name}</p>
-                <a>{el.quantity}</a>
+                <img src={el?.path} />
+                <p>{el?.name}</p>
+                <p>{el?.quantity}</p>
               </div>
-              {selectedNetwork.name == data[index].name ? (
-                <img src={BlackArrow} />
-              ) : (
-                <img src={Arrow} />
-              )}
+              {selectedNetwork?.name == el.name ? <img src={BlackArrow} /> : <img src={Arrow} />}
             </div>
           ))}
         </span>

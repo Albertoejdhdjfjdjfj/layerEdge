@@ -1,6 +1,6 @@
 import React from 'react';
-import Arrow from '../../../../assets/images/Arrow.svg';
-import Dots from '../../../../assets/images/Dots.svg';
+import Arrow from '../../../../assets/images/general/Arrow.svg';
+import Dots from '../../../../assets/images/general/Dots.svg';
 import './Paginator.css';
 
 const Paginator = () => {

@@ -5,7 +5,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(18, 15, 20, 0.8);
-  backdrop-filter: blur(calc(6 * 100vw/var(--screen-width-desc)));
+  backdrop-filter: blur(calc(6 * 100vw / var(--screen-width-desc)));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,12 +13,12 @@
 
 .pop_up {
   position: fixed;
-  width: calc(540 * 100vw/var(--screen-width-desc));
-  height: calc(227 * 100vw/var(--screen-width-desc));
-  border-radius: calc(32 * 100vw/var(--screen-width-desc));
-  border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--white-5);
+  width: calc(540 * 100vw / var(--screen-width-desc));
+  height: calc(227 * 100vw / var(--screen-width-desc));
+  border-radius: calc(32 * 100vw / var(--screen-width-desc));
+  border: calc(1 * 100vw / var(--screen-width-desc)) solid var(--white-5);
   background-color: #1c1a20;
-  padding: calc(32 * 100vw/var(--screen-width-desc));
+  padding: calc(32 * 100vw / var(--screen-width-desc));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,10 +29,10 @@
   content: '';
   position: absolute;
   top: 0;
-  left: calc(12 * 100vw/var(--screen-width-desc));
+  left: calc(12 * 100vw / var(--screen-width-desc));
   right: 12;
-  height: calc(1 * 100vw/var(--screen-width-desc));
-  width: calc(510 * 100vw/var(--screen-width-desc));
+  height: calc(1 * 100vw / var(--screen-width-desc));
+  width: calc(510 * 100vw / var(--screen-width-desc));
   background-image: linear-gradient(
     to left,
     rgba(255, 255, 255, 0),
@@ -49,21 +49,21 @@
 }
 .pop_up > div > h2 {
   display: inline;
-  font-size: calc(32 * 100vw/var(--screen-width-desc));
+  font-size: calc(32 * 100vw / var(--screen-width-desc));
 }
 
 .pop_up > div > a {
-  margin-top: calc(8 * 100vw/var(--screen-width-desc));
+  margin-top: calc(8 * 100vw / var(--screen-width-desc));
   font-weight: 500;
 }
 
 .pop_up > p {
-  width: calc(126 * 100vw/var(--screen-width-desc));
-  height: calc(56 * 100vw/var(--screen-width-desc));
-  margin-top: calc(32 * 100vw/var(--screen-width-desc));
-  border-radius: calc(100 * 100vw/var(--screen-width-desc));
+  width: calc(126 * 100vw / var(--screen-width-desc));
+  height: calc(56 * 100vw / var(--screen-width-desc));
+  margin-top: calc(32 * 100vw / var(--screen-width-desc));
+  border-radius: calc(100 * 100vw / var(--screen-width-desc));
   background-color: var(--white-100);
-  margin-top: calc(8 * 100vw/var(--screen-width-desc));
+  margin-top: calc(8 * 100vw / var(--screen-width-desc));
   font-weight: 500;
   color: var(--black-100);
   display: flex;
@@ -75,7 +75,6 @@
   cursor: pointer;
 }
 
-
 @media screen and (max-width: 700px) {
   .pop_up_wrapper {
     width: 100vw;
@@ -83,30 +82,30 @@
 
   .pop_up {
     position: relative;
-    width: calc(343 * 100vw/var(--screen-width-desc));
-    height: calc(166 * 100vw/var(--screen-width-desc));
-    border-radius: calc(32 * 100vw/var(--screen-width-desc));
-    padding: calc(20 * 100vw/var(--screen-width-desc));
+    width: calc(343 * 100vw / var(--screen-width-desc));
+    height: calc(166 * 100vw / var(--screen-width-desc));
+    border-radius: calc(32 * 100vw / var(--screen-width-desc));
+    padding: calc(20 * 100vw / var(--screen-width-desc));
   }
 
   .pop_up::before {
     content: '';
     position: absolute;
-    width: calc(310 * 100vw/var(--screen-width-desc));
+    width: calc(310 * 100vw / var(--screen-width-desc));
   }
 
   .pop_up > div > h2 {
-    font-size: calc(24 * 100vw/var(--screen-width-desc));
+    font-size: calc(24 * 100vw / var(--screen-width-desc));
   }
 
   .pop_up > div > a {
-    font-size: calc(13 * 100vw/var(--screen-width-desc));
+    font-size: calc(13 * 100vw / var(--screen-width-desc));
   }
 
   .pop_up > p {
-    width: calc(82 * 100vw/var(--screen-width-desc));
-    height: calc(34 * 100vw/var(--screen-width-desc));
-    margin-top: calc(32 * 100vw/var(--screen-width-desc));
-    font-size: calc(13 * 100vw/var(--screen-width-desc));
+    width: calc(82 * 100vw / var(--screen-width-desc));
+    height: calc(34 * 100vw / var(--screen-width-desc));
+    margin-top: calc(32 * 100vw / var(--screen-width-desc));
+    font-size: calc(13 * 100vw / var(--screen-width-desc));
   }
 }

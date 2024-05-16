@@ -1,10 +1,12 @@
 import React from 'react';
-import Glass from '../../../assets/images/Glass.svg';
+import Glass from '../../../assets/images/general/Glass.svg';
 import Neworks from './Networks/Networks';
 import Tokens from './Tokens/Tokens';
+import {useNavigate } from 'react-router-dom';
 import './Assets.css';
 
 const Assets = () => {
+  const navigate = useNavigate();
   return (
     <div className="assets_wrapper">
       <div className="assets">

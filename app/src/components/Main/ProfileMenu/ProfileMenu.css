@@ -1,0 +1,73 @@
+.profile_menu {
+  width: calc(217 * 100vw / var(--screen-width-desc));
+  height: calc(162 * 100vw / var(--screen-width-desc));
+  background-color: var(--gray-10);
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  position: absolute;
+  top: calc(92 * 100vw / var(--screen-width-desc));
+  right: calc(48 * 100vw / var(--screen-width-desc));
+}
+
+.profile_menu > div {
+  width: 100%;
+  height: calc(54 * 100vw / var(--screen-width-desc));
+  padding: calc(17 * 100vw / var(--screen-width-desc)) 0 calc(17 * 100vw / var(--screen-width-desc))
+    calc(16 * 100vw / var(--screen-width-desc));
+  display: flex;
+  cursor: pointer;
+}
+
+.profile_menu > div:first-of-type,
+.profile_menu > div:nth-of-type(2) {
+  border-bottom: calc(1 * 100vw / var(--screen-width-desc)) solid var(--gray-15);
+}
+
+.profile_menu > div > img {
+  width: calc(20 * 100vw / var(--screen-width-desc));
+  height: calc(20 * 100vw / var(--screen-width-desc));
+}
+
+.profile_menu > div > a {
+  font-weight: 500;
+  margin-left: calc(16 * 100vw / var(--screen-width-desc));
+}
+
+@media screen and (max-width: 700px) {
+  .profile_menu {
+    width: calc(180 * 100vw / var(--screen-width-desc));
+    height: calc(126 * 100vw / var(--screen-width-desc));
+    background-color: var(--gray-10);
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    position: absolute;
+    z-index: 3;
+    top: calc(58 * 100vw / var(--screen-width-desc));
+    right: calc(16 * 100vw / var(--screen-width-desc));
+  }
+
+  .profile_menu > div {
+    width: 100%;
+    height: calc(42 * 100vw / var(--screen-width-desc));
+    padding: calc(12 * 100vw / var(--screen-width-desc)) 0
+      calc(12 * 100vw / var(--screen-width-desc)) calc(8 * 100vw / var(--screen-width-desc));
+    display: flex;
+  }
+
+  .profile_menu > div:first-of-type,
+  .profile_menu > div:nth-of-type(2) {
+    border-bottom: 1px solid var(--gray-15);
+  }
+
+  .profile_menu > div > img {
+    width: calc(20 * 100vw / var(--screen-width-desc));
+    height: calc(20 * 100vw / var(--screen-width-desc));
+  }
+
+  .profile_menu > div > a {
+    font-weight: 500;
+    margin-left: calc(16 * 100vw / var(--screen-width-desc));
+  }
+}

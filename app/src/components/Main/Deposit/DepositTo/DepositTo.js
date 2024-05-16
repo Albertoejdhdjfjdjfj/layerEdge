@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../../../assets/images/Logo.svg';
+import Logo from '../../../../assets/images/general/Logo.svg';
 import './DepositTo.css';
 
 const DepositTo = () => {

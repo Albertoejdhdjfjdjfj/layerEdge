@@ -1,5 +1,5 @@
 import React from 'react';
-import PenEdit from '../../../../assets/images/PenEdit.svg';
+import PenEdit from '../../../../assets/images/general/PenEdit.svg';
 import './TopSection.css';
 
 const TopSection = () => {

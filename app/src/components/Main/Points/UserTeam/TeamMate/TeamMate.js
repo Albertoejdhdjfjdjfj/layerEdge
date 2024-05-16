@@ -1,7 +1,7 @@
 import React from 'react';
 import './TeamMate.css';
-import Avatar from '../../../../../assets/images/Avatar.svg';
-import BitCoin from '../../../../../assets/images/BitCoinLogo2.svg';
+import Avatar from '../../../../../assets/images/general/Avatar.svg';
+import BitCoin from '../../../../../assets/images/networks/BitCoin.svg';
 
 const TeamMate = ({ number, name, wallet, total_assets }) => {
   return (

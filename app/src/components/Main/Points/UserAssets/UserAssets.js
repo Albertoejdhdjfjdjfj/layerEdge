@@ -1,7 +1,5 @@
 import React from 'react';
-import USDT from '../../../../assets/images/USDTLogo.svg';
-import Ethereum from '../../../../assets/images/EthereumLogo2.svg';
-import BitCoin from '../../../../assets/images/BitCoinLogo2.svg';
+import USDT from '../../../../assets/images/tokens/USDT.svg';
 import './UserAssets.css';
 
 const UserAssets = () => {
@@ -13,7 +11,6 @@ const UserAssets = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={Ethereum} />
             </span>
             <div>
               <p>USDT</p>
@@ -27,7 +24,6 @@ const UserAssets = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={Ethereum} />
             </span>
             <div>
               <p>USDT</p>

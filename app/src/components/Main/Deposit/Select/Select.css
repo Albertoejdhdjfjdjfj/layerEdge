@@ -1,10 +1,11 @@
 .select {
-  height: calc(46 * 100vw/var(--screen-width-desc));
-  padding: calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc));
+  height: calc(46 * 100vw / var(--screen-width-desc));
+  padding: calc(0 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc))
+    calc(0 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc));
   display: flex;
   align-items: center;
-  border-radius: calc(100 * 100vw/var(--screen-width-desc));
-  border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-15);
+  border-radius: calc(100 * 100vw / var(--screen-width-desc));
+  border: calc(1 * 100vw / var(--screen-width-desc)) solid var(--gray-15);
   font-weight: 500;
 }
 
@@ -13,27 +14,28 @@
 }
 
 .select > img:first-child {
-  width: calc(20 * 100vw/var(--screen-width-desc));
-  height: calc(20 * 100vw/var(--screen-width-desc));
-  margin-right: calc(8 * 100vw/var(--screen-width-desc));
+  width: calc(20 * 100vw / var(--screen-width-desc));
+  height: calc(20 * 100vw / var(--screen-width-desc));
+  margin-right: calc(8 * 100vw / var(--screen-width-desc));
 }
 
 .select > img:last-child {
-  margin-left: calc(8 * 100vw/var(--screen-width-desc));
+  margin-left: calc(8 * 100vw / var(--screen-width-desc));
 }
 
 @media screen and (max-width: 700px) {
   .select {
-    height: calc(34 * 100vw/var(--screen-width-desc));
-    padding: calc(0 * 100vw/var(--screen-width-desc)) calc(12 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(12 * 100vw/var(--screen-width-desc));
+    height: calc(34 * 100vw / var(--screen-width-desc));
+    padding: calc(0 * 100vw / var(--screen-width-desc)) calc(12 * 100vw / var(--screen-width-desc))
+      calc(0 * 100vw / var(--screen-width-desc)) calc(12 * 100vw / var(--screen-width-desc));
   }
 
   .select > img:first-child {
-    width: calc(16 * 100vw/var(--screen-width-desc));
-    height: calc(16 * 100vw/var(--screen-width-desc));
+    width: calc(16 * 100vw / var(--screen-width-desc));
+    height: calc(16 * 100vw / var(--screen-width-desc));
   }
 
   .select > img:last-child {
-    margin-left: calc(8 * 100vw/var(--screen-width-desc));
+    margin-left: calc(8 * 100vw / var(--screen-width-desc));
   }
 }

@@ -6,7 +6,8 @@
 
 .deposit_to > p {
   display: flex;
-  padding: calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc));
+  padding: calc(0 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc))
+    calc(0 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc));
 }
 
 .deposit_to > p > a {
@@ -14,22 +15,23 @@
 }
 
 .deposit_to > div {
-  padding: calc(16 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc));
+  padding: calc(16 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc))
+    calc(16 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc));
   display: flex;
   justify-content: space-between;
   background-color: var(--gray-10);
-  border-radius: calc(24 * 100vw/var(--screen-width-desc));
-  margin-top: calc(12 * 100vw/var(--screen-width-desc));
+  border-radius: calc(24 * 100vw / var(--screen-width-desc));
+  margin-top: calc(12 * 100vw / var(--screen-width-desc));
 }
 
 .deposit_to > div > img {
-  width: calc(145 * 100vw/var(--screen-width-desc));
-  height: calc(32 * 100vw/var(--screen-width-desc));
+  width: calc(145 * 100vw / var(--screen-width-desc));
+  height: calc(32 * 100vw / var(--screen-width-desc));
 }
 
 .deposit_to > div > div,
 .deposit_to > div > span {
-  height: calc(39 * 100vw/var(--screen-width-desc));
+  height: calc(39 * 100vw / var(--screen-width-desc));
 }
 
 .deposit_to > div > div > p,
@@ -39,7 +41,7 @@
 
 .deposit_to > div > div > a,
 .deposit_to > div > span > a {
-  font-size: calc(12 * 100vw/var(--screen-width-desc));
+  font-size: calc(12 * 100vw / var(--screen-width-desc));
   font-weight: 500;
   color: var(--gray-100);
 }
@@ -47,43 +49,44 @@
 @media screen and (max-width: 700px) {
   .deposit_to > p {
     display: flex;
-    padding: calc(0 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc));
+    padding: calc(0 * 100vw / var(--screen-width-desc)) calc(16 * 100vw / var(--screen-width-desc))
+      calc(0 * 100vw / var(--screen-width-desc)) calc(16 * 100vw / var(--screen-width-desc));
   }
 
   .deposit_to > p > a {
-    font-size: calc(13 * 100vw/var(--screen-width-desc));
+    font-size: calc(13 * 100vw / var(--screen-width-desc));
   }
 
   .deposit_to > div {
-    height: calc(101 * 100vw/var(--screen-width-desc));
-    padding: calc(16 * 100vw/var(--screen-width-desc));
+    height: calc(101 * 100vw / var(--screen-width-desc));
+    padding: calc(16 * 100vw / var(--screen-width-desc));
     display: flex;
     align-items: flex-end;
-    border-radius: calc(24 * 100vw/var(--screen-width-desc));
-    margin-top: calc(8 * 100vw/var(--screen-width-desc));
+    border-radius: calc(24 * 100vw / var(--screen-width-desc));
+    margin-top: calc(8 * 100vw / var(--screen-width-desc));
   }
 
   .deposit_to > div > img {
-    width: calc(91 * 100vw/var(--screen-width-desc));
-    height: calc(20 * 100vw/var(--screen-width-desc));
+    width: calc(91 * 100vw / var(--screen-width-desc));
+    height: calc(20 * 100vw / var(--screen-width-desc));
     position: absolute;
     transform: translate(-50%, 0);
     left: 50%;
-    margin-bottom: calc(49 * 100vw/var(--screen-width-desc));
+    margin-bottom: calc(49 * 100vw / var(--screen-width-desc));
   }
 
   .deposit_to > div > div,
   .deposit_to > div > span {
-    height: calc(33 * 100vw/var(--screen-width-desc));
+    height: calc(33 * 100vw / var(--screen-width-desc));
   }
 
   .deposit_to > div > div > p,
   .deposit_to > div > span > p {
-    font-size: calc(13 * 100vw/var(--screen-width-desc));
+    font-size: calc(13 * 100vw / var(--screen-width-desc));
   }
 
   .deposit_to > div > div > a,
   .deposit_to > div > span > a {
-    font-size: calc(11 * 100vw/var(--screen-width-desc));
+    font-size: calc(11 * 100vw / var(--screen-width-desc));
   }
 }

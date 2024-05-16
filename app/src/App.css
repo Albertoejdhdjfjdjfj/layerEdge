@@ -18,14 +18,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: calc(16*100vw/var(--screen-width-desc));
+  font-size: calc(16 * 100vw / var(--screen-width-desc));
   font-weight: 400;
   font-family: 'Satoshi';
   color: var(--white-100);
 }
 
 body {
-  background-image: url('./assets/images/MainBackroung.png');
+  background-image: url('./assets/images/general/MainBackroung.png');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,18 +40,17 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-  *{
-    font-size: calc(13*100vw/var(--screen-width-desc));
+  * {
+    font-size: calc(13 * 100vw / var(--screen-width-desc));
   }
   :root {
     --screen-width-desc: 375;
   }
 }
 
-
 @media screen and (max-width: 375px) {
-  *{
-    font-size: calc(13*100vw/var(--screen-width-desc));
+  * {
+    font-size: calc(13 * 100vw / var(--screen-width-desc));
   }
 
   :root {

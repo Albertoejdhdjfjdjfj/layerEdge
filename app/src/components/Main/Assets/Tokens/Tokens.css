@@ -1,16 +1,16 @@
 .tokens {
   width: 50%;
-  height: calc(400 * 100vw/var(--screen-width-desc));
-  margin-right: calc(8 * 100vw/var(--screen-width-desc));
-  padding-bottom: calc(31 * 100vw/var(--screen-width-desc));
-  border-left: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-15);
+  height: calc(400 * 100vw / var(--screen-width-desc));
+  margin-right: calc(8 * 100vw / var(--screen-width-desc));
+  padding-bottom: calc(31 * 100vw / var(--screen-width-desc));
+  border-left: calc(1 * 100vw / var(--screen-width-desc)) solid var(--gray-15);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .tokens > a {
-  margin-left: calc(32 * 100vw/var(--screen-width-desc));
+  margin-left: calc(32 * 100vw / var(--screen-width-desc));
   font-weight: 500;
   color: var(--gray-100);
 }
@@ -20,18 +20,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: calc(24 * 100vw/var(--screen-width-desc));
+  margin-top: calc(24 * 100vw / var(--screen-width-desc));
   overflow-y: scroll;
 }
 
 .tokens > span::-webkit-scrollbar {
-  width: calc(4 * 100vw/var(--screen-width-desc));
+  width: calc(4 * 100vw / var(--screen-width-desc));
 }
 
 .tokens > span::-webkit-scrollbar-thumb {
-  height: calc(20 * 100vw/var(--screen-width-desc));
+  height: calc(20 * 100vw / var(--screen-width-desc));
   background-color: var(--white-100);
-  border-radius: calc(100 * 100vw/var(--screen-width-desc));
+  border-radius: calc(100 * 100vw / var(--screen-width-desc));
 }
 
 .tokens > span::-webkit-scrollbar-track {
@@ -39,13 +39,18 @@
 }
 
 .tokens > span > div {
-  width: calc(336 * 100vw/var(--screen-width-desc));
-  padding: calc(12 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc));
-  margin-top: calc(8 * 100vw/var(--screen-width-desc));
-  border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-15);
-  border-radius: calc(100 * 100vw/var(--screen-width-desc));
+  width: calc(336 * 100vw / var(--screen-width-desc));
+  padding: calc(12 * 100vw / var(--screen-width-desc)) calc(16 * 100vw / var(--screen-width-desc));
+  margin-top: calc(8 * 100vw / var(--screen-width-desc));
+  border: calc(1 * 100vw / var(--screen-width-desc)) solid var(--gray-15);
+  border-radius: calc(100 * 100vw / var(--screen-width-desc));
   display: flex;
   justify-content: space-between;
+}
+
+.tokens > span > div > img {
+  width: calc(20 * 100vw / var(--screen-width-desc));
+  height: calc(20 * 100vw / var(--screen-width-desc));
 }
 
 .selected_token {
@@ -63,26 +68,26 @@
 
 .tokens > span > div > div > p,
 .tokens > span > div > div > a {
-  margin-left: calc(8 * 100vw/var(--screen-width-desc));
+  margin-left: calc(8 * 100vw / var(--screen-width-desc));
 }
 
 .tokens > span > div > div > a {
   font-weight: 500;
-  font-size: calc(12 * 100vw/var(--screen-width-desc));
+  font-size: calc(12 * 100vw / var(--screen-width-desc));
   color: var(--gray-100);
 }
 
 .tokens > span > div > div > img {
-  width: calc(20 * 100vw/var(--screen-width-desc));
-  height: calc(20 * 100vw/var(--screen-width-desc));
+  width: calc(20 * 100vw / var(--screen-width-desc));
+  height: calc(20 * 100vw / var(--screen-width-desc));
 }
 
 @media screen and (max-width: 700px) {
   .tokens {
     width: 100%;
     height: max-content;
-    padding: 0 calc(20 * 100vw/var(--screen-width-desc));
-    margin-top: calc(32 * 100vw/var(--screen-width-desc));
+    padding: 0 calc(20 * 100vw / var(--screen-width-desc));
+    margin-top: calc(32 * 100vw / var(--screen-width-desc));
     padding-bottom: 0;
     border-left: none;
     margin-right: 0;
@@ -90,12 +95,12 @@
 
   .tokens > a {
     font-size: 0;
-    margin-left: calc(16 * 100vw/var(--screen-width-desc));
+    margin-left: calc(16 * 100vw / var(--screen-width-desc));
   }
 
   .tokens > a::after {
     content: 'Token';
-    font-size: calc(13 * 100vw/var(--screen-width-desc));
+    font-size: calc(13 * 100vw / var(--screen-width-desc));
     font-weight: 500;
     color: var(--white-100);
   }
@@ -107,7 +112,7 @@
 
   .tokens > span > div {
     width: 100%;
-    padding: calc(8 * 100vw/var(--screen-width-desc)) calc(12 * 100vw/var(--screen-width-desc));
+    padding: calc(8 * 100vw / var(--screen-width-desc)) calc(12 * 100vw / var(--screen-width-desc));
   }
 
   .selected_token > div > p {
@@ -116,17 +121,17 @@
 
   .tokens > span > div > div > p,
   .tokens > span > div > div > a {
-    margin-left: calc(8 * 100vw/var(--screen-width-desc));
+    margin-left: calc(8 * 100vw / var(--screen-width-desc));
   }
 
   .tokens > span > div > div > a {
     font-weight: 500;
-    font-size: calc(12 * 100vw/var(--screen-width-desc));
+    font-size: calc(12 * 100vw / var(--screen-width-desc));
     color: var(--gray-100);
   }
 
   .tokens > span > div > div > img {
-    width: calc(16 * 100vw/var(--screen-width-desc));
-    height: calc(16 * 100vw/var(--screen-width-desc));
+    width: calc(16 * 100vw / var(--screen-width-desc));
+    height: calc(16 * 100vw / var(--screen-width-desc));
   }
 }

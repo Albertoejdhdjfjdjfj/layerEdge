@@ -1,18 +1,19 @@
 import React from 'react';
-import BitCoinLogo from '../../../assets/images/BitCoinLogo2.svg';
-import USDT from '../../../assets/images/USDTLogo.svg';
-import BitCoinNetwork from '../../../assets/images/BitCoinLogo3.svg';
-import EthereumNetwork from '../../../assets/images/EthereumLogo2.svg';
-import Avatar from '../../../assets/images/Avatar.svg';
-import Logo from '../../../assets/images/Logo.svg';
+import { useDispatch } from 'react-redux';
+import { transaction_history_change } from '../../../redux/actions/components_control/actions';
+import BitCoinLogo from '../../../assets/images/networks/BitCoin.svg';
+import USDT from '../../../assets/images/tokens/USDT.svg';
+import Avatar from '../../../assets/images/general/Avatar.svg';
+import Logo from '../../../assets/images/general/Logo.svg';
 import './TransactionHistory.css';
 
 const TransactionHistory = () => {
+  const dispatch = useDispatch();
   return (
     <div className="transaction_history_wrapper">
       <div className="transaction_history">
         <span>
-          <div>
+          <div onClick={() => dispatch(transaction_history_change())}>
             <span></span>
             <span></span>
           </div>
@@ -33,7 +34,6 @@ const TransactionHistory = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={EthereumNetwork} />
               <div>
                 <p>USDT</p>
                 <a>on Ethereum</a>
@@ -54,7 +54,6 @@ const TransactionHistory = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={EthereumNetwork} />
               <div>
                 <p>USDT</p>
                 <a>on Ethereum</a>
@@ -75,7 +74,6 @@ const TransactionHistory = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={EthereumNetwork} />
               <div>
                 <p>USDT</p>
                 <a>on Ethereum</a>
@@ -96,7 +94,6 @@ const TransactionHistory = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={EthereumNetwork} />
               <div>
                 <p>USDT</p>
                 <a>on Ethereum</a>
@@ -117,7 +114,6 @@ const TransactionHistory = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={EthereumNetwork} />
               <div>
                 <p>USDT</p>
                 <a>on Ethereum</a>
@@ -138,7 +134,6 @@ const TransactionHistory = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={EthereumNetwork} />
               <div>
                 <p>USDT</p>
                 <a>on Ethereum</a>
@@ -159,7 +154,6 @@ const TransactionHistory = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={EthereumNetwork} />
               <div>
                 <p>USDT</p>
                 <a>on Ethereum</a>
@@ -180,7 +174,6 @@ const TransactionHistory = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={EthereumNetwork} />
               <div>
                 <p>USDT</p>
                 <a>on Ethereum</a>
@@ -201,7 +194,6 @@ const TransactionHistory = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={EthereumNetwork} />
               <div>
                 <p>USDT</p>
                 <a>on Ethereum</a>
@@ -222,7 +214,6 @@ const TransactionHistory = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={EthereumNetwork} />
               <div>
                 <p>USDT</p>
                 <a>on Ethereum</a>
@@ -243,7 +234,6 @@ const TransactionHistory = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={EthereumNetwork} />
               <div>
                 <p>USDT</p>
                 <a>on Ethereum</a>
@@ -264,7 +254,6 @@ const TransactionHistory = () => {
           <div>
             <span>
               <img src={USDT} />
-              <img src={EthereumNetwork} />
               <div>
                 <p>USDT</p>
                 <a>on Ethereum</a>

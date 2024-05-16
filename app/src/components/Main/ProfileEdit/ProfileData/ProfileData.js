@@ -1,5 +1,5 @@
 import React from 'react';
-import Avatar from '../../../../assets/images/Avatar.svg';
+import Avatar from '../../../../assets/images/general/Avatar.svg';
 import './ProfileData.css';
 
 const ProfileData = () => {

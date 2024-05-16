@@ -1,13 +1,13 @@
 .top_section {
   width: 100%;
-  height: calc(100 * 100vw/var(--screen-width-desc));
+  height: calc(100 * 100vw / var(--screen-width-desc));
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .top_section > div {
-  height: calc(75 * 100vw/var(--screen-width-desc));
+  height: calc(75 * 100vw / var(--screen-width-desc));
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,7 +15,7 @@
 }
 
 .top_section > div > a {
-  font-size: calc(32 * 100vw/var(--screen-width-desc));
+  font-size: calc(32 * 100vw / var(--screen-width-desc));
 }
 
 .top_section > div > span {
@@ -26,26 +26,26 @@
 @media screen and (max-width: 700px) {
   .top_section {
     height: min-content;
-    width: calc(343 * 100vw/var(--screen-width-desc));
+    width: calc(343 * 100vw / var(--screen-width-desc));
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
   }
 
   .top_section > div {
-    height: calc(60 * 100vw/var(--screen-width-desc));
+    height: calc(60 * 100vw / var(--screen-width-desc));
   }
 
   .top_section > div > a {
-    font-size: calc(24 * 100vw/var(--screen-width-desc));
+    font-size: calc(24 * 100vw / var(--screen-width-desc));
   }
 
   .top_section > div:nth-of-type(2) {
-    margin-left: calc(57 * 100vw/var(--screen-width-desc));
+    margin-left: calc(57 * 100vw / var(--screen-width-desc));
   }
 
   .top_section > div:nth-of-type(3) {
-    margin-top: calc(32 * 100vw/var(--screen-width-desc));
+    margin-top: calc(32 * 100vw / var(--screen-width-desc));
   }
 
   .top_section > div > span {

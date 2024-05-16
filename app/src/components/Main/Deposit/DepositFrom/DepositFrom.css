@@ -1,12 +1,13 @@
 .deposit_from {
   width: 100%;
-  margin-top: calc(32 * 100vw/var(--screen-width-desc));
+  margin-top: calc(32 * 100vw / var(--screen-width-desc));
   display: flex;
   flex-direction: column;
 }
 
 .deposit_from > p {
-  padding: calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc));
+  padding: calc(0 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc))
+    calc(0 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc));
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -17,11 +18,12 @@
 }
 
 .deposit_from > div {
-  height: calc(80 * 100vw/var(--screen-width-desc));
-  margin-top: calc(12 * 100vw/var(--screen-width-desc));
-  padding: calc(16 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc));
-  border: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-15);
-  border-radius: calc(24 * 100vw/var(--screen-width-desc));
+  height: calc(80 * 100vw / var(--screen-width-desc));
+  margin-top: calc(12 * 100vw / var(--screen-width-desc));
+  padding: calc(16 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc))
+    calc(16 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc));
+  border: calc(1 * 100vw / var(--screen-width-desc)) solid var(--gray-15);
+  border-radius: calc(24 * 100vw / var(--screen-width-desc));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,51 +42,54 @@
 
 .deposit_from > div > span > a,
 .deposit_from > span > a {
-  font-size: calc(12 * 100vw/var(--screen-width-desc));
+  font-size: calc(12 * 100vw / var(--screen-width-desc));
   font-weight: 500;
   color: var(--gray-100);
 }
 
 .deposit_from > span {
-  height: calc(39 * 100vw/var(--screen-width-desc));
-  margin-top: calc(12 * 100vw/var(--screen-width-desc));
-  padding: calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc));
+  height: calc(39 * 100vw / var(--screen-width-desc));
+  margin-top: calc(12 * 100vw / var(--screen-width-desc));
+  padding: calc(0 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc))
+    calc(0 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc));
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-
 @media screen and (max-width: 700px) {
   .deposit_from > p {
-    padding: calc(0 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc));
+    padding: calc(0 * 100vw / var(--screen-width-desc)) calc(16 * 100vw / var(--screen-width-desc))
+      calc(0 * 100vw / var(--screen-width-desc)) calc(16 * 100vw / var(--screen-width-desc));
   }
 
   .deposit_from > p > a {
-    font-size: calc(13 * 100vw/var(--screen-width-desc));
+    font-size: calc(13 * 100vw / var(--screen-width-desc));
   }
 
   .deposit_from > div {
-    height: calc(64 * 100vw/var(--screen-width-desc));
-    margin-top: calc(8 * 100vw/var(--screen-width-desc));
-    padding: calc(8 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(8 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc));
-    border-radius: calc(20 * 100vw/var(--screen-width-desc));
+    height: calc(64 * 100vw / var(--screen-width-desc));
+    margin-top: calc(8 * 100vw / var(--screen-width-desc));
+    padding: calc(8 * 100vw / var(--screen-width-desc)) calc(16 * 100vw / var(--screen-width-desc))
+      calc(8 * 100vw / var(--screen-width-desc)) calc(16 * 100vw / var(--screen-width-desc));
+    border-radius: calc(20 * 100vw / var(--screen-width-desc));
   }
 
   .deposit_from > div > span > p,
   .deposit_from > span > p {
-    font-size: calc(13 * 100vw/var(--screen-width-desc));
+    font-size: calc(13 * 100vw / var(--screen-width-desc));
   }
 
   .deposit_from > div > span > a,
   .deposit_from > span > a {
-    font-size: calc(11 * 100vw/var(--screen-width-desc));
+    font-size: calc(11 * 100vw / var(--screen-width-desc));
   }
 
   .deposit_from > span {
-    height: calc(33 * 100vw/var(--screen-width-desc));
-    margin-top: calc(8 * 100vw/var(--screen-width-desc));
-    padding: calc(0 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(0 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc));
+    height: calc(33 * 100vw / var(--screen-width-desc));
+    margin-top: calc(8 * 100vw / var(--screen-width-desc));
+    padding: calc(0 * 100vw / var(--screen-width-desc)) calc(16 * 100vw / var(--screen-width-desc))
+      calc(0 * 100vw / var(--screen-width-desc)) calc(16 * 100vw / var(--screen-width-desc));
   }
 }

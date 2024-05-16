@@ -1,79 +1,33 @@
 import React, { useState } from 'react';
-import BitCoinLogo from '../../../../assets/images/BitCoinLogo2.svg';
-import Arrow from '../../../../assets/images/Arrow.svg';
-import BlackArrow from '../../../../assets/images/BlackArrow.svg';
+import { useSelector, useDispatch } from 'react-redux';
+import { set_token } from '../../../../redux/actions/components_control/actions';
+import Arrow from '../../../../assets/images/general/Arrow.svg';
+import BlackArrow from '../../../../assets/images/general/BlackArrow.svg';
+import {useNavigate } from 'react-router-dom';
+import { data } from './data/token_data';
 import './Tokens.css';
 
 const Tokens = () => {
-  const [selectedToken, selectToken] = useState(false);
+  const selectedToken = useSelector((state) => state.componentsControlReducer.token);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   return (
     <div className="tokens">
       <a>2.Choose a token</a>
       <span>
-        <div className={selectedToken == 1 ? 'selected_token' : ''} onClick={() => selectToken(1)}>
-          <div>
-            <img src={BitCoinLogo} />
-            <p>Bitcoin</p>
-            <a>1 Token</a>
+        {data.map((el) => (
+          <div
+            className={selectedToken?.name == el.name ? 'selected_token' : ''}
+            onClick={() => navigate('/warning')}
+          >
+            <div>
+              <img src={el?.path} />
+              <p>{el?.name}</p>
+              <a>{el?.quantity}</a>
+            </div>
+            {selectedToken?.name == el.name ? <img src={BlackArrow} /> : <img src={Arrow} />}
           </div>
-          {selectedToken == 1 ? <img src={BlackArrow} /> : <img src={Arrow} />}
-        </div>
-        <div className={selectedToken == 2 ? 'selected_token' : ''} onClick={() => selectToken(2)}>
-          <div>
-            <img src={BitCoinLogo} />
-            <p>Bitcoin</p>
-            <a>1 Token</a>
-          </div>
-          {selectedToken == 2 ? <img src={BlackArrow} /> : <img src={Arrow} />}
-        </div>
-        <div className={selectedToken == 3 ? 'selected_token' : ''} onClick={() => selectToken(3)}>
-          <div>
-            <img src={BitCoinLogo} />
-            <p>Bitcoin</p>
-            <a>1 Token</a>
-          </div>
-          {selectedToken == 3 ? <img src={BlackArrow} /> : <img src={Arrow} />}
-        </div>
-        <div className={selectedToken == 4 ? 'selected_token' : ''} onClick={() => selectToken(4)}>
-          <div>
-            <img src={BitCoinLogo} />
-            <p>Bitcoin</p>
-            <a>1 Token</a>
-          </div>
-          {selectedToken == 4 ? <img src={BlackArrow} /> : <img src={Arrow} />}
-        </div>
-        <div className={selectedToken == 5 ? 'selected_token' : ''} onClick={() => selectToken(5)}>
-          <div>
-            <img src={BitCoinLogo} />
-            <p>Bitcoin</p>
-            <a>1 Token</a>
-          </div>
-          {selectedToken == 5 ? <img src={BlackArrow} /> : <img src={Arrow} />}
-        </div>
-        <div className={selectedToken == 6 ? 'selected_token' : ''} onClick={() => selectToken(6)}>
-          <div>
-            <img src={BitCoinLogo} />
-            <p>Bitcoin</p>
-            <a>1 Token</a>
-          </div>
-          {selectedToken == 6 ? <img src={BlackArrow} /> : <img src={Arrow} />}
-        </div>
-        <div className={selectedToken == 7 ? 'selected_token' : ''} onClick={() => selectToken(7)}>
-          <div>
-            <img src={BitCoinLogo} />
-            <p>Bitcoin</p>
-            <a>1 Token</a>
-          </div>
-          {selectedToken == 7 ? <img src={BlackArrow} /> : <img src={Arrow} />}
-        </div>
-        <div className={selectedToken == 8 ? 'selected_token' : ''} onClick={() => selectToken(8)}>
-          <div>
-            <img src={BitCoinLogo} />
-            <p>Bitcoin</p>
-            <a>1 Token</a>
-          </div>
-          {selectedToken == 8 ? <img src={BlackArrow} /> : <img src={Arrow} />}
-        </div>
+        ))}
       </span>
     </div>
   );

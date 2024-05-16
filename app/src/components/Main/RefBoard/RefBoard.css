@@ -1,6 +1,6 @@
 .ref_board {
-  width: calc(960 * 100vw/var(--screen-width-desc));
-  margin-bottom: calc(232 * 100vw/var(--screen-width-desc));
+  width: calc(960 * 100vw / var(--screen-width-desc));
+  margin-bottom: calc(232 * 100vw / var(--screen-width-desc));
   display: flex;
   flex-direction: column;
 }
@@ -24,14 +24,14 @@
     width: calc(343 * 100vw / 375);
     display: flex;
     flex-direction: column;
-    margin-bottom: calc(16 * 100vw/var(--screen-width-desc));
+    margin-bottom: calc(16 * 100vw / var(--screen-width-desc));
   }
 }
 
 @media screen and (max-width: calc(375 * 100vw/var(--screen-width-desc))) {
   .ref_board {
-    margin-bottom: calc(16 * 100vw/var(--screen-width-desc));
-    width: calc(343 * 100vw/var(--screen-width-desc));
+    margin-bottom: calc(16 * 100vw / var(--screen-width-desc));
+    width: calc(343 * 100vw / var(--screen-width-desc));
     display: flex;
     flex-direction: column;
   }

@@ -1,22 +1,22 @@
 .ref {
   width: 100%;
-  height: calc(78 * 100vw/var(--screen-width-desc));
+  height: calc(78 * 100vw / var(--screen-width-desc));
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-15);
+  border-bottom: calc(1 * 100vw / var(--screen-width-desc)) solid var(--gray-15);
 }
 
 .ref > span {
-  width: calc(412 * 100vw/var(--screen-width-desc));
-  height: calc(46 * 100vw/var(--screen-width-desc));
+  width: calc(412 * 100vw / var(--screen-width-desc));
+  height: calc(46 * 100vw / var(--screen-width-desc));
   display: flex;
   justify-content: space-between;
 }
 
 .ref > span > a {
-  width: calc(317 * 100vw/var(--screen-width-desc));
-  border-radius: calc(24 * 100vw/var(--screen-width-desc));
+  width: calc(317 * 100vw / var(--screen-width-desc));
+  border-radius: calc(24 * 100vw / var(--screen-width-desc));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,8 +26,8 @@
 }
 
 .ref > span > p {
-  width: calc(87 * 100vw/var(--screen-width-desc));
-  border-radius: calc(100 * 100vw/var(--screen-width-desc));
+  width: calc(87 * 100vw / var(--screen-width-desc));
+  border-radius: calc(100 * 100vw / var(--screen-width-desc));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,28 +90,28 @@
 
 @media screen and (max-width: calc(375 * 100vw/var(--screen-width-desc))) {
   .ref * {
-    font-size: calc(13 * 100vw/var(--screen-width-desc));
+    font-size: calc(13 * 100vw / var(--screen-width-desc));
   }
 
   .ref {
     width: 100%;
-    height: calc(116 * 100vw/var(--screen-width-desc));
+    height: calc(116 * 100vw / var(--screen-width-desc));
   }
 
   .ref > span {
-    width: calc(343 * 100vw/var(--screen-width-desc));
-    height: calc(34 * 100vw/var(--screen-width-desc));
+    width: calc(343 * 100vw / var(--screen-width-desc));
+    height: calc(34 * 100vw / var(--screen-width-desc));
   }
 
   .ref > span > a {
-    width: calc(253 * 100vw/var(--screen-width-desc));
-    height: calc(34 * 100vw/var(--screen-width-desc));
-    border-radius: calc(20 * 100vw/var(--screen-width-desc));
+    width: calc(253 * 100vw / var(--screen-width-desc));
+    height: calc(34 * 100vw / var(--screen-width-desc));
+    border-radius: calc(20 * 100vw / var(--screen-width-desc));
   }
 
   .ref > span > p {
-    width: calc(82 * 100vw/var(--screen-width-desc));
-    height: calc(34 * 100vw/var(--screen-width-desc));
-    border-radius: calc(100 * 100vw/var(--screen-width-desc));
+    width: calc(82 * 100vw / var(--screen-width-desc));
+    height: calc(34 * 100vw / var(--screen-width-desc));
+    border-radius: calc(100 * 100vw / var(--screen-width-desc));
   }
 }

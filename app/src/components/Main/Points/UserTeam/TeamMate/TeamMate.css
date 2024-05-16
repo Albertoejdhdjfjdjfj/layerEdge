@@ -1,86 +1,89 @@
 .team_mate {
   position: relative;
   width: 100%;
-  height: calc(87 * 100vw/var(--screen-width-desc));
+  height: calc(87 * 100vw / var(--screen-width-desc));
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-15);
+  border-bottom: calc(1 * 100vw / var(--screen-width-desc)) solid var(--gray-15);
 }
 
 .team_mate > span {
-  width: calc(32 * 100vw/var(--screen-width-desc));
-  height: calc(32 * 100vw/var(--screen-width-desc));
+  width: calc(32 * 100vw / var(--screen-width-desc));
+  height: calc(32 * 100vw / var(--screen-width-desc));
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: calc(99 * 100vw/var(--screen-width-desc));
+  border-radius: calc(99 * 100vw / var(--screen-width-desc));
   background-color: var(--gray-10);
-  box-shadow: 0 calc(10 * 100vw/var(--screen-width-desc)) calc(20 * 100vw/var(--screen-width-desc)) 0 rgba(18, 15, 20, 0.25);
+  box-shadow: 0 calc(10 * 100vw / var(--screen-width-desc))
+    calc(20 * 100vw / var(--screen-width-desc)) 0 rgba(18, 15, 20, 0.25);
 }
 
 .team_mate > div {
   display: flex;
   align-items: center;
   position: absolute;
-  left: calc(158 * 100vw/var(--screen-width-desc));
+  left: calc(158 * 100vw / var(--screen-width-desc));
 }
 
 .team_mate > div > img {
-  width: calc(32 * 100vw/var(--screen-width-desc));
-  height: calc(32 * 100vw/var(--screen-width-desc));
+  width: calc(32 * 100vw / var(--screen-width-desc));
+  height: calc(32 * 100vw / var(--screen-width-desc));
 }
 
 .team_mate > div > a {
   font-weight: 500;
-  margin-left: calc(16 * 100vw/var(--screen-width-desc));
+  margin-left: calc(16 * 100vw / var(--screen-width-desc));
 }
 
 .team_mate > a {
   position: absolute;
   font-weight: 500;
-  left: calc(461 * 100vw/var(--screen-width-desc));
+  left: calc(461 * 100vw / var(--screen-width-desc));
 }
 
 .team_mate > p {
   display: flex;
   align-items: center;
-  padding: calc(12 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc)) calc(12 * 100vw/var(--screen-width-desc)) calc(24 * 100vw/var(--screen-width-desc));
-  border-radius: calc(100 * 100vw/var(--screen-width-desc));
+  padding: calc(12 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc))
+    calc(12 * 100vw / var(--screen-width-desc)) calc(24 * 100vw / var(--screen-width-desc));
+  border-radius: calc(100 * 100vw / var(--screen-width-desc));
   background-color: var(--gray-10);
 }
 
 .team_mate > p > img {
-  width: calc(18 * 100vw/var(--screen-width-desc));
-  height: calc(18 * 100vw/var(--screen-width-desc));
+  width: calc(18 * 100vw / var(--screen-width-desc));
+  height: calc(18 * 100vw / var(--screen-width-desc));
 }
 
 .team_mate > p > a {
   font-weight: 500;
-  margin-left: calc(8 * 100vw/var(--screen-width-desc));
+  margin-left: calc(8 * 100vw / var(--screen-width-desc));
 }
 
 @media screen and (max-width: 700px) {
   .team_mate {
     position: relative;
-    padding: calc(16 * 100vw/var(--screen-width-desc)) 0 0 0;
+    padding: calc(16 * 100vw / var(--screen-width-desc)) 0 0 0;
     width: 100%;
-    height: calc(118 * 100vw/var(--screen-width-desc));
+    height: calc(118 * 100vw / var(--screen-width-desc));
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    border-bottom: calc(1 * 100vw/var(--screen-width-desc)) solid var(--gray-15);
+    border-bottom: calc(1 * 100vw / var(--screen-width-desc)) solid var(--gray-15);
   }
 
   .team_mate > span {
-    width: calc(24 * 100vw/var(--screen-width-desc));
-    height: calc(24 * 100vw/var(--screen-width-desc));
+    width: calc(24 * 100vw / var(--screen-width-desc));
+    height: calc(24 * 100vw / var(--screen-width-desc));
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: calc(99 * 100vw/var(--screen-width-desc));
+    border-radius: calc(99 * 100vw / var(--screen-width-desc));
     background-color: var(--gray-10);
-    box-shadow: 0 calc(10 * 100vw/var(--screen-width-desc)) calc(20 * 100vw/var(--screen-width-desc)) 0 rgba(18, 15, 20, 0.25);
+    box-shadow: 0 calc(10 * 100vw / var(--screen-width-desc))
+      calc(20 * 100vw / var(--screen-width-desc)) 0 rgba(18, 15, 20, 0.25);
   }
 
   .team_mate > div {
@@ -88,52 +91,53 @@
     align-items: center;
     position: absolute;
     left: 0;
-    top: calc(66 * 100vw/var(--screen-width-desc));
+    top: calc(66 * 100vw / var(--screen-width-desc));
   }
 
   .team_mate > div > img {
-    width: calc(32 * 100vw/var(--screen-width-desc));
-    height: calc(32 * 100vw/var(--screen-width-desc));
+    width: calc(32 * 100vw / var(--screen-width-desc));
+    height: calc(32 * 100vw / var(--screen-width-desc));
   }
 
   .team_mate > div > a {
     font-weight: 500;
-    margin-left: calc(16 * 100vw/var(--screen-width-desc));
+    margin-left: calc(16 * 100vw / var(--screen-width-desc));
   }
 
   .team_mate > a {
     position: absolute;
-    left: calc(179 * 100vw/var(--screen-width-desc));
-    top: calc(69 * 100vw/var(--screen-width-desc));
+    left: calc(179 * 100vw / var(--screen-width-desc));
+    top: calc(69 * 100vw / var(--screen-width-desc));
     font-weight: 500;
   }
 
   .team_mate > a::after {
     content: 'Wallet';
-    font-size: calc(11 * 100vw/var(--screen-width-desc));
+    font-size: calc(11 * 100vw / var(--screen-width-desc));
     font-weight: 500;
     color: var(--gray-100);
     position: absolute;
-    margin-top: calc(18 * 100vw/var(--screen-width-desc));
-    right: calc(48 * 100vw/var(--screen-width-desc));
+    margin-top: calc(18 * 100vw / var(--screen-width-desc));
+    right: calc(48 * 100vw / var(--screen-width-desc));
   }
 
   .team_mate > p {
     display: flex;
     align-items: center;
-    padding: calc(8 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc)) calc(8 * 100vw/var(--screen-width-desc)) calc(16 * 100vw/var(--screen-width-desc));
-    border-radius: calc(100 * 100vw/var(--screen-width-desc));
-    margin-right: calc(50 * 100vw/var(--screen-width-desc));
+    padding: calc(8 * 100vw / var(--screen-width-desc)) calc(16 * 100vw / var(--screen-width-desc))
+      calc(8 * 100vw / var(--screen-width-desc)) calc(16 * 100vw / var(--screen-width-desc));
+    border-radius: calc(100 * 100vw / var(--screen-width-desc));
+    margin-right: calc(50 * 100vw / var(--screen-width-desc));
     background-color: var(--gray-10);
   }
 
   .team_mate > p > img {
-    width: calc(18 * 100vw/var(--screen-width-desc));
-    height: calc(18 * 100vw/var(--screen-width-desc));
+    width: calc(18 * 100vw / var(--screen-width-desc));
+    height: calc(18 * 100vw / var(--screen-width-desc));
   }
 
   .team_mate > p > a {
     font-weight: 500;
-    margin-left: calc(8 * 100vw/var(--screen-width-desc));
+    margin-left: calc(8 * 100vw / var(--screen-width-desc));
   }
 }

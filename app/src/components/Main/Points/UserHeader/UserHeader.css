@@ -6,19 +6,19 @@
 }
 
 .user_header > span {
-  width: calc(359 * 100vw/var(--screen-width-desc));
+  width: calc(359 * 100vw / var(--screen-width-desc));
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .user_header > span > img {
-  width: calc(100 * 100vw/var(--screen-width-desc));
-  height: calc(100 * 100vw/var(--screen-width-desc));
+  width: calc(100 * 100vw / var(--screen-width-desc));
+  height: calc(100 * 100vw / var(--screen-width-desc));
 }
 
 .user_header div {
-  height: calc(75 * 100vw/var(--screen-width-desc));
+  height: calc(75 * 100vw / var(--screen-width-desc));
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -26,12 +26,12 @@
 }
 
 .user_header div > p {
-  font-size: calc(32 * 100vw/var(--screen-width-desc));
+  font-size: calc(32 * 100vw / var(--screen-width-desc));
 }
 
 .user_header div > a {
   font-weight: 500;
-  font-size: calc(16 * 100vw/var(--screen-width-desc));
+  font-size: calc(16 * 100vw / var(--screen-width-desc));
   color: var(--gray-100);
 }
 
@@ -41,24 +41,24 @@
   }
 
   .user_header > span {
-    width: calc(250 * 100vw/var(--screen-width-desc));
-    margin-bottom: calc(36 * 100vw/var(--screen-width-desc));
+    width: calc(250 * 100vw / var(--screen-width-desc));
+    margin-bottom: calc(36 * 100vw / var(--screen-width-desc));
   }
 
   .user_header > span > img {
-    width: calc(64 * 100vw/var(--screen-width-desc));
-    height: calc(64 * 100vw/var(--screen-width-desc));
+    width: calc(64 * 100vw / var(--screen-width-desc));
+    height: calc(64 * 100vw / var(--screen-width-desc));
   }
 
   .user_header div {
-    height: calc(60 * 100vw/var(--screen-width-desc));
+    height: calc(60 * 100vw / var(--screen-width-desc));
   }
 
   .user_header div > p {
-    font-size: calc(24 * 100vw/var(--screen-width-desc));
+    font-size: calc(24 * 100vw / var(--screen-width-desc));
   }
 
   .user_header div > a {
-    font-size: calc(13 * 100vw/var(--screen-width-desc));
+    font-size: calc(13 * 100vw / var(--screen-width-desc));
   }
 }

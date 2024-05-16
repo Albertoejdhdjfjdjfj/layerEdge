@@ -1,21 +1,20 @@
 import React from 'react';
 import { useBool } from '../../assets/functions/hooks/customHooks';
 import { useLocation, useNavigate } from 'react-router-dom';
-import Logo from '../../assets/images/Logo.svg';
-import BitCoinLogo from '../../assets/images/BitCoinLogo2.svg';
-import Avatar from '../../assets/images/Avatar.svg';
-import Wallet from '../../assets/images/Wallet.svg';
-import PenEdit from '../../assets/images/PenEdit.svg';
-import TimeClockLoading from '../../assets/images/TimeClockLoading.svg';
-import ExitLogOut from '../../assets/images/ExitLogOut.svg';
+import { useDispatch } from 'react-redux';
+import { profile_menu_change } from '../../redux/actions/components_control/actions';
+import Logo from '../../assets/images/general/Logo.svg';
+import BitCoinLogo from '../../assets/images/networks/BitCoin.svg';
+import Avatar from '../../assets/images/general/Avatar.svg';
+import Wallet from '../../assets/images/general/Wallet.svg';
 import './Header.css';
 
 const Header = () => {
   const [stateBurger, changeSteteBurger] = useBool();
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
   const currentPath = location.pathname;
-  const [stateProfileMenu, changeStateProfileMenu] = useBool();
 
   return (
     <header className={stateBurger ? 'transform_header' : ''}>
@@ -30,7 +29,7 @@ const Header = () => {
       <nav>
         <p onClick={() => navigate('/deposit')}>Bridge</p>
         <p onClick={() => navigate('/leaderboard')}>Leaderboard</p>
-        <p onClick={() => navigate('/deposit')}>Points</p>
+        <p onClick={() => navigate('/points')}>Points</p>
       </nav>
 
       <div className={currentPath == '/' ? '' : 'connected_wallet'}>
@@ -40,28 +39,11 @@ const Header = () => {
           <img src={BitCoinLogo} />
           <a>0.00851267 BTC</a>
         </span>
-        <span onClick={() => changeStateProfileMenu()}>
+        <span onClick={() => dispatch(profile_menu_change())}>
           <img src={Avatar} />
           <a>Saurav_Devrani</a>
         </span>
       </div>
-
-      {stateProfileMenu && (
-        <p>
-          <div>
-            <img src={PenEdit} />
-            <a>Edit profile</a>
-          </div>
-          <div>
-            <img src={TimeClockLoading} />
-            <a>Transaction History</a>
-          </div>
-          <div>
-            <img src={ExitLogOut} />
-            <a>Log Out</a>
-          </div>
-        </p>
-      )}
     </header>
   );
 };

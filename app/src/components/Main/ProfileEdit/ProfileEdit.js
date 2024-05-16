@@ -1,17 +1,19 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { profile_edit_change } from '../../../redux/actions/components_control/actions';
 import ProfileData from './ProfileData/ProfileData';
-import Wallet from '../../../assets/images/Wallet.svg';
-import BitCoinLogo from '../../../assets/images/BitCoinLogo2.svg';
-import Avatar from '../../../assets/images/Avatar.svg';
-import Logo from '../../../assets/images/Logo.svg';
+import BitCoinLogo from '../../../assets/images/networks/BitCoin.svg';
+import Avatar from '../../../assets/images/general/Avatar.svg';
+import Logo from '../../../assets/images/general/Logo.svg';
 import './ProfileEdit.css';
 
 const ProfileEdit = () => {
+  const dispatch = useDispatch();
   return (
     <div className="profile_edit_wrapper">
       <div className="profile_edit">
         <span>
-          <div>
+          <div onClick={() => dispatch(profile_edit_change())}>
             <span></span>
             <span></span>
           </div>

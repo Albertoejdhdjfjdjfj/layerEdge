@@ -1,6 +1,6 @@
 import React from 'react';
 import './UserInfo.css';
-import Avatar from '../../../../assets/images/Avatar.svg';
+import Avatar from '../../../../assets/images/general/Avatar.svg';
 
 const UserInfo = () => {
   return (

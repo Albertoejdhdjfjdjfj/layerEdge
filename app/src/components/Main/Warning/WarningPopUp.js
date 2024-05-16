@@ -1,9 +1,11 @@
 import React from 'react';
-import WarningLogo from '../../../assets/images/WarningLogo.svg';
-import WarningLogo2 from '../../../assets/images/WarningLogo2.svg';
+import WarningLogo from '../../../assets/images/general/WarningLogo.svg';
+import WarningLogo2 from '../../../assets/images/general/WarningLogo2.svg';
+import {useNavigate } from 'react-router-dom';
 import './WarningPopUp.css';
-
+ 
 const WarningPopUp = () => {
+  const navigate = useNavigate();
   return (
     <div className="warning_pop_up_wrapper">
       <div>
@@ -20,7 +22,7 @@ const WarningPopUp = () => {
           <a>I understand and accept the risks associated with this transaction</a>
           <p>Confirm</p>
         </div>
-        <p>Cancel</p>
+        <p onClick={()=>navigate('/deposit')}>Cancel</p>
       </div>
     </div>
   );

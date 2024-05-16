@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Avatar from '../../../../../assets/images/Avatar.svg';
-import LetterE from '../../../../../assets/images/LetterE.svg';
+import Avatar from '../../../../../assets/images/general/Avatar.svg';
+import LetterE from '../../../../../assets/images/general/LetterE.svg';
 import './User.css';
 
 const User = ({
